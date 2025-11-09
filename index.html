@@ -618,7 +618,7 @@
 
     <footer>
         <p>&copy; 2025 Every Nation Campus WITS</p>
-        <p style="margin-top: 0.5rem; opacity: 0.8;">Change the Campus! Change the World!</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Change the Campus! Change the World! </p>
     </footer>
 
     <script>
@@ -657,6 +657,12 @@
             'IMG-20251109-WA0050.jpg'
         ];
 
+        // Get the base path for GitHub Pages
+        const basePath = window.location.pathname.includes('github.io') 
+            ? window.location.pathname.split('/')[1] 
+            : '';
+        const imagePath = basePath ? `/${basePath}/images/` : 'images/';
+
         let currentLightboxIndex = 0;
 
         // Load gallery images dynamically
@@ -668,9 +674,10 @@
                 galleryItem.onclick = () => openLightbox(index);
                 
                 const img = document.createElement('img');
-                img.src = `images/${imageName}`;
+                img.src = `${imagePath}${imageName}`;
                 img.alt = 'Mission photo';
                 img.onerror = function() {
+                    console.error('Failed to load:', this.src);
                     this.outerHTML = '<div class="placeholder-img">📸</div>';
                 };
                 
@@ -684,7 +691,7 @@
             currentLightboxIndex = index;
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightboxImg');
-            lightboxImg.src = `images/${galleryImages[index]}`;
+            lightboxImg.src = `${imagePath}${galleryImages[index]}`;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -703,7 +710,7 @@
                 currentLightboxIndex = 0;
             }
             const lightboxImg = document.getElementById('lightboxImg');
-            lightboxImg.src = `images/${galleryImages[currentLightboxIndex]}`;
+            lightboxImg.src = `${imagePath}${galleryImages[currentLightboxIndex]}`;
         }
 
         // Close lightbox with Escape key
