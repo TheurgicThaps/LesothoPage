@@ -305,21 +305,40 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .gallery-item {
-            overflow: hidden;
             border-radius: 20px;
-            aspect-ratio: 4/3;
-            background: #f0f0f0;
+            background: #f8f9fa;
             transition: transform 0.3s;
             cursor: pointer;
+            padding: 0.75rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            display: inline-block;
+            width: fit-content;
         }
 
         .gallery-item:hover {
-            transform: translateY(-8px) scale(1.02);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
         }
 
         /* Lightbox Modal */
@@ -618,7 +637,7 @@
 
     <footer>
         <p>&copy; 2025 Every Nation Campus WITS</p>
-        <p style="margin-top: 0.5rem; opacity: 0.8;">Change the Campus! Change the World! </p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">Change the Campus! Change the World!</p>
     </footer>
 
     <script>
