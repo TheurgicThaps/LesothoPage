@@ -138,9 +138,11 @@ Mission: Lesotho 2025
 💝 Support the Mission
 Banking Details
 
-Account Name: ENC Wits Leaders
+Account Holder: MR AUSTIN BOSHEGO
+Account Type: Savings Account
 Bank: Capitec
-Account Number: 1611867329
+PayShap: 0637807248@CAPITEC
+Account Number: 2592115753
 Branch Code: 470010
 Reference: Your Name + Lesotho
 

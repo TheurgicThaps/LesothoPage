@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesotho Mission - ENC WITS</title>
+    <title>Lesotho Mission 2026 | 29 November–5 December | ENC WITS</title>
+    <meta name="description" content="Join ENC WITS for Lesotho Mission 2026, 29 November to 5 December. Discover the impact of our 2025 outreach and partner with the journey ahead.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,9 +16,12 @@
         }
 
         :root {
-            --blue: #0047AB;
+            --blue: #00209f;
             --green: #009543;
-            --dark: #1a1a2e;
+            --green-ink: #006b30;
+            --surface: #f5f7f6;
+            --border: #e0e6e3;
+            --dark: #121712;
         }
 
         body {
@@ -50,9 +54,7 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
             font-size: 1.5rem;
-            background: linear-gradient(135deg, var(--blue), var(--green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--green-ink);
         }
 
         nav ul {
@@ -73,7 +75,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--blue) 0%, #0066cc 50%, var(--green) 100%);
+            background: var(--blue);
             padding: 140px 2rem 80px;
             position: relative;
         }
@@ -137,9 +139,7 @@
             font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 700;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--blue), var(--green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--green-ink);
         }
 
         .section-subtitle {
@@ -165,13 +165,14 @@
         }
 
         .about-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-3px);
         }
 
         .card-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--blue), var(--green));
+            background: #edf5ef;
+            color: var(--green-ink);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -187,7 +188,7 @@
         }
 
         .impact-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: var(--surface);
             padding: 4rem;
             border-radius: 30px;
             margin: 4rem 0;
@@ -201,7 +202,7 @@
         }
 
         .verse-container {
-            background: linear-gradient(135deg, var(--blue) 0%, #0066cc 50%, var(--green) 100%);
+            background: var(--blue);
             padding: 5rem 2rem;
             margin: 5rem 0;
         }
@@ -252,13 +253,14 @@
         }
 
         .partner-card:hover {
-            transform: translateY(-12px);
+            transform: translateY(-3px);
         }
 
         .partner-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--blue), var(--green));
+            background: #edf5ef;
+            color: var(--green-ink);
             border-radius: 20px;
             display: inline-flex;
             align-items: center;
@@ -277,7 +279,7 @@
         }
 
         .bank-info {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: var(--surface);
             padding: 2.5rem;
             border-radius: 20px;
             margin-bottom: 2rem;
@@ -291,7 +293,7 @@
         }
 
         .bank-row.highlight {
-            background: linear-gradient(135deg, #fff3cd, #ffe69c);
+            background: #e9f4ec;
             margin: 1rem -1.5rem 0;
             padding: 1.2rem 1.5rem;
             border-radius: 15px;
@@ -303,137 +305,66 @@
             font-size: 1.2rem;
         }
 
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
+        .mission-eyebrow, .story-kicker { font-size: .8rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+        .mission-eyebrow { margin-bottom: 1.5rem; }
+        .mission-date { display: inline-block; padding: .6rem 1.3rem; margin-bottom: 1.5rem; border: 1px solid rgba(255,255,255,.45); border-radius: 50px; background: rgba(255,255,255,.12); font-weight: 600; }
+        .hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.2rem 2rem; }
+        .hero-story-link { color: white; text-underline-offset: 5px; }
+        #impact-2025, #partner { scroll-margin-top: 100px; }
+        .impact-story { background: #f5f7f6; }
+        .impact-intro { max-width: 820px; }
+        .story-kicker { color: #006e35; display: block; margin-bottom: 1.2rem; }
+        .impact-intro h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 4vw, 3.6rem); line-height: 1.15; letter-spacing: -.04em; margin-bottom: 1.5rem; }
+        .impact-intro h2 span { color: var(--blue); }
+        .impact-intro > p:last-child { font-size: 1.15rem; color: #49534c; }
+        .impact-highlights { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 2rem; margin: 3rem 0; padding: 2rem 0; border-top: 1px solid #ccd5c9; border-bottom: 1px solid #ccd5c9; }
+        .impact-highlights strong { display: block; font-family: 'Montserrat', sans-serif; font-size: clamp(1.3rem, 2.4vw, 2rem); color: var(--blue); line-height: 1.3; margin-bottom: .5rem; }
+        .impact-highlights > div:first-child strong { font-size: 3.7rem; line-height: 1; }
+        .impact-highlights span { color: #49534c; }
+        .impact-chapters { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; }
+        .impact-chapters article { background: white; border-radius: 20px; padding: 2rem; }
+        .chapter-number { color: #006e35; font-size: .8rem; font-weight: 700; letter-spacing: .06em; }
+        .impact-chapters h3 { font-family: 'Montserrat', sans-serif; font-size: 1.4rem; line-height: 1.4; margin: .8rem 0; }
+        .impact-chapters p { color: #49534c; }
+        .mission-reflection { margin: 3rem 0; padding: clamp(1.5rem, 4vw, 4rem); background: var(--dark); border-radius: 24px; color: white; }
+        .mission-reflection .story-kicker { color: #9ee9b6; }
+        .mission-reflection blockquote { font-size: clamp(1.25rem, 2.2vw, 1.8rem); line-height: 1.7; max-width: 950px; }
+        .mission-reflection figcaption { margin-top: 1.3rem; color: #bec9d8; }
+        .impact-thanks { max-width: 850px; margin: auto; text-align: center; }
+        .impact-thanks h3 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.4; margin-bottom: 1rem; }
+        .impact-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center; margin-top: 1.5rem; }
+        .story-gallery-button { font: inherit; color: var(--blue); font-weight: 600; background: transparent; padding: 1rem; border: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 5px; }
+        @media (max-width: 650px) {
+            .impact-highlights, .impact-chapters { grid-template-columns: 1fr; }
+            .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+            nav .container { padding: 1rem; }
+            nav .logo { font-size: 1.1rem; }
+            nav ul { gap: 1rem; }
         }
 
-        .gallery-item {
-            border-radius: 20px;
-            background: #f8f9fa;
-            transition: transform 0.3s;
-            cursor: pointer;
-            padding: 0.75rem;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            display: inline-block;
-            width: fit-content;
-        }
+        .mission-album + .mission-album { margin-top: 5rem; }
+        .media-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+        .media-card { margin: 0; overflow: hidden; border-radius: 16px; background: #f8f9fa; box-shadow: 0 5px 20px rgba(0,0,0,.08); }
+        .media-card > a { display: block; }
+        .media-card img, .media-card video { display: block; width: 100%; height: 300px; object-fit: contain; background: #111611; }
+        .media-card figcaption { padding: 1rem; overflow-wrap: anywhere; }
+        .album-button { display: inline-block; padding: 1rem 2rem; border-radius: 50px; background: var(--blue); color: white; text-decoration: none; font-weight: 600; }
+        .album-button:hover { background: var(--green-ink); }
+        @media (max-width: 900px) { .media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+        @media (max-width: 600px) { .media-grid { grid-template-columns: 1fr; } }
 
-        .gallery-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 15px;
-        }
-
-        @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-        }
-
-        /* Lightbox Modal */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox.active {
-            display: flex;
-        }
-
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
-            position: relative;
-        }
-
-        .lightbox img {
-            max-width: 100%;
-            max-height: 90vh;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.5);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2001;
-        }
-
-        .lightbox-close:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: white;
-            font-size: 50px;
-            font-weight: bold;
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.5);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            user-select: none;
-        }
-
-        .lightbox-nav:hover {
-            background: rgba(0, 0, 0, 0.8);
-        }
-
-        .lightbox-prev {
-            left: 20px;
-        }
-
-        .lightbox-next {
-            right: 20px;
-        }
-
-        .placeholder-img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
-            color: #ccc;
-            font-size: 3.5rem;
-            width: 100%;
-            height: 100%;
-        }
+        .photo-open { display: block; width: 100%; padding: 0; border: 0; cursor: zoom-in; background: transparent; }
+        .photo-open:focus-visible { outline: 4px solid var(--green); outline-offset: -4px; }
+        .photo-viewer { width: 100vw; height: 100dvh; max-width: none; max-height: none; border: 0; padding: 1rem; background: #111611; color: white; }
+        .photo-viewer::backdrop { background: #111611; }
+        .photo-viewer[open] { display: flex; flex-direction: column; gap: 1rem; }
+        .viewer-toolbar, .viewer-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .photo-viewer button { padding: .8rem 1.2rem; border: 1px solid #657086; border-radius: 50px; background: #243024; color: white; cursor: pointer; font: inherit; }
+        .photo-viewer button:hover { background: var(--blue); }
+        .photo-viewer button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+        .photo-viewer img { width: 100%; flex: 1; min-height: 0; object-fit: contain; }
+        .viewer-controls { justify-content: center; }
+        #viewer-caption { text-align: right; }
 
         #gallery-page {
             display: none;
@@ -458,15 +389,56 @@
         html {
             scroll-behavior: smooth;
         }
+        /* Shared finishing details */
+        .logo { display: flex; align-items: center; gap: .7rem; }
+        .flag-mark { display: flex; flex-direction: column; width: 30px; height: 22px; border: 1px solid var(--border); overflow: hidden; border-radius: 2px; }
+        .flag-mark i { flex: 1; background: var(--blue); }
+        .flag-mark i:nth-child(2) { background: white; flex: 1.3; }
+        .flag-mark i:nth-child(3) { background: var(--green); }
+        nav { border-bottom: 1px solid var(--border); box-shadow: none; }
+        nav button { font: inherit; color: var(--dark); background: transparent; border: 0; padding: .4rem .25rem; cursor: pointer; font-weight: 600; }
+        nav button:hover { color: var(--blue); }
+        :focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+        .hero { border-bottom: 12px solid var(--green); }
+        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 7px; background: white; }
+        .hero-content { width: 100%; }
+        .hero-stats { padding-top: 2rem; border-top: 1px solid rgba(255,255,255,.25); }
+        .stat-label { font-size: .85rem; }
+        .card-icon svg, .partner-icon svg { width: 30px; height: 30px; }
+        .partner-icon { width: 64px; height: 64px; border-radius: 16px; }
+        .about-card, .partner-card, .donation-details { border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,.035); border-radius: 18px; }
+        .about-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+        .partner-intro { max-width: 760px; text-align: center; margin: 0 auto 3rem; color: #49534c; font-size: 1.1rem; }
+        .donation-details h3 { font-family: 'Montserrat', sans-serif; font-size: 1.7rem; margin-bottom: 1.5rem; }
+        .bank-row { gap: 1rem; }
+        .bank-row .label { color: #49534c; }
+        .bank-row .value { text-align: right; overflow-wrap: anywhere; min-width: 0; font-weight: 600; }
+        .verse-container { background: var(--green-ink); margin: 0; border-top: 6px solid white; }
+        .impact-section { padding: clamp(1.5rem,4vw,3rem); border-left: 4px solid var(--green); border-radius: 0 16px 16px 0; }
+        footer { border-top: 5px solid var(--green); }
+        @media (max-width: 650px) {
+            .container { padding: 4rem 1.25rem; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-card, .partner-card, .donation-details { padding: 1.5rem; }
+            .bank-info { padding: 1rem; }
+            .bank-row { flex-direction: column; gap: .25rem; }
+            .bank-row .value { text-align: left; }
+            .bank-row.highlight { margin: 1rem 0 0; padding: 1rem; }
+            .flag-mark { width: 24px; height: 18px; }
+            .verse-text { font-size: 1.15rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+        }
     </style>
 </head>
 <body>
     <nav>
         <div class="container">
-            <div class="logo">Lesotho Mission</div>
+            <div class="logo"><span class="flag-mark" aria-hidden="true"><i></i><i></i><i></i></span>Lesotho Mission</div>
             <ul>
-                <li><a onclick="showHome()">Home</a></li>
-                <li><a onclick="showGallery()">Gallery</a></li>
+                <li><button type="button" onclick="showHome()">Home</button></li>
+                <li><button type="button" onclick="showGallery()">Gallery</button></li>
             </ul>
         </div>
     </nav>
@@ -474,17 +446,19 @@
     <div id="home-page">
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Lesotho Mission 2025</h1>
-                <p class="hero-subtitle">Bringing hope, faith, and transformative support to students and families across Butha-Buthe</p>
-                <a href="#partner" class="cta-button">Partner With Us</a>
+                <p class="mission-eyebrow">ENC WITS · Butha-Buthe, Lesotho</p>
+                <h1 class="hero-title">Lesotho Mission 2026</h1>
+                <p class="mission-date"><time datetime="2026-11-29">29 November</time> &ndash; <time datetime="2026-12-05">5 December 2026</time></p>
+                <p class="hero-subtitle">The story continues.<br>Returning with faith, practical care, and time for the next generation.</p>
+                <div class="hero-actions"><a href="#partner" class="cta-button">Be Part of the Return</a><a href="#impact-2025" class="hero-story-link">See what you made possible in 2025 &darr;</a></div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">10</span>
+                        <span class="stat-number">7</span>
                         <span class="stat-label">Days of Impact</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">∞</span>
-                        <span class="stat-label">Lives Touched</span>
+                        <span class="stat-number">2026</span>
+                        <span class="stat-label">The Next Chapter</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">1</span>
@@ -500,25 +474,25 @@
             
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="card-icon">🎓</div>
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Z"/><path d="M7 12v5c3 3 7 3 10 0v-5M21 9v7"/></svg></div>
                     <h3>Educational Support</h3>
                     <p>Providing academic assistance, tutoring, and mentorship to help students unlock their potential and succeed in their educational journey.</p>
                 </div>
                 
                 <div class="about-card">
-                    <div class="card-icon">🤝</div>
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h4l3 3 3-3h4l4 4-6 6h-4l-8-8v-2Z"/><path d="m7 11 4-5h5l5 5-4 4M3 8v9M21 8v9"/></svg></div>
                     <h3>Practical Assistance</h3>
                     <p>Distributing non-perishable food, clothing, and toys to families, meeting their immediate needs with care and compassion.</p>
                 </div>
 
                 <div class="about-card">
-                    <div class="card-icon">💝</div>
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></div>
                     <h3>Community Building</h3>
                     <p>Creating lasting relationships with local communities through genuine connection, cultural exchange, and collaborative service initiatives.</p>
                 </div>
                 
                 <div class="about-card">
-                    <div class="card-icon">✝️</div>
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3h4v6h6v4h-6v8h-4v-8H4V9h6V3Z"/></svg></div>
                     <h3>Faith & Hope</h3>
                     <p>Sharing the Gospel message and offering spiritual encouragement to build lasting faith in local communities.</p>
                 </div>
@@ -526,9 +500,36 @@
 
             <div class="impact-section">
                 <h3>Our Impact</h3>
-                <p>The Lesotho mission is a 10-day outreach led by Every Nation Campus (ENC) WITS, dedicated to making a lasting positive impact on young people and families in Butha-Buthe. Through educational programs, mentorship, faith-based support, and practical donations, our volunteers work alongside local communities to bring hope and create meaningful change that echoes into eternity.</p>
+                <p>From 29 November to 5 December 2026, Every Nation Campus (ENC) WITS returns to Butha-Buthe for seven days of outreach. Our purpose is to serve students and families through tutoring, mentorship, practical care, and sharing the Gospel. We are building on the relationships formed in 2025, with a heart to listen, encourage, and walk alongside the community.</p>
             </div>
         </div>
+
+        <section class="impact-story" id="impact-2025" aria-labelledby="impact-heading">
+            <div class="container">
+                <div class="impact-intro">
+                    <p class="story-kicker">Looking back · Lesotho 2025</p>
+                    <h2 id="impact-heading">You gave.<br><span>A community felt the difference.</span></h2>
+                    <p>Clothes to wear. Confidence to speak. A staffroom renewed. Conversations that stayed with us. Your partnership helped make the 2025 mission a success across every part of the outreach.</p>
+                </div>
+                <div class="impact-highlights">
+                    <div><strong>95</strong><span>packs of donated clothing shared</span></div>
+                    <div><strong>Every student &amp; teacher</strong><span>received an outfit</span></div>
+                    <div><strong>One renewed staffroom</strong><span>freshly painted walls and a repaired floor</span></div>
+                </div>
+                <div class="impact-chapters">
+                    <article><span class="chapter-number">01 / Practical care</span><h3>Generosity, made tangible.</h3><p>From 95 packs of donated clothing, every student and teacher received an outfit. Some families also received clothes for their households and grocery packs to help meet everyday needs.</p></article>
+                    <article><span class="chapter-number">02 / Learning &amp; mentorship</span><h3>Confidence beyond the classroom.</h3><p>We tutored children in English and Maths and saw a change in their attitude towards their studies and their confidence in public speaking. Personal conversations offered encouragement and space to talk about treating one another with respect, including respect for the other gender.</p></article>
+                    <article><span class="chapter-number">03 / Serving the school</span><h3>A fresh space for the teachers.</h3><p>We painted the staffroom walls and repaired the floor, renewing a space used by the teachers who invest in these learners every day.</p></article>
+                    <article><span class="chapter-number">04 / Faith in the community</span><h3>Taking the Good News into town.</h3><p>On Friday, we held an open-air service in town and went through the streets sharing the Gospel and speaking with people in the community.</p></article>
+                </div>
+                <figure class="mission-reflection">
+                    <span class="story-kicker">The moments we carried home</span>
+                    <blockquote><p>&ldquo;The camp was a huge success. The learners can&rsquo;t wait for us to come back again. I miss the seven boys I was in a group with and wish I had more time with them. I really enjoyed the conversations we had.&rdquo;</p></blockquote>
+                    <figcaption>&mdash; Thapelo Tlowana, a student missionary</figcaption>
+                </figure>
+                <div class="impact-thanks"><h3>This would not have been possible without your partnership.</h3><p>Thank you for helping us show up in 2025. In 2026, we have another opportunity to keep showing up.</p><div class="impact-actions"><a href="#partner" class="album-button">Partner with the 2026 mission</a><button type="button" class="story-gallery-button" onclick="showGallery()">See the 2025 memories &rarr;</button></div></div>
+            </div>
+        </section>
 
         <div class="verse-container">
             <div class="verse-slider">
@@ -554,24 +555,24 @@
         <div class="container" id="partner">
             <h2 class="section-title">Partner With Us</h2>
             <div class="partner-intro">
-                <p>Your support transforms lives. Whether through prayer, donations, volunteering, or financial partnership, you become part of a movement bringing hope and the Gospel to students and families across Lesotho.</p>
+                <p>Help write the next chapter, 29 November &ndash; 5 December 2026. Through prayer, donated items, volunteering, or financial support, you can help us return to Butha-Buthe with practical care, encouragement, and the Gospel.</p>
             </div>
 
             <div class="partner-grid">
                 <div class="partner-card">
-                    <div class="partner-icon">🙏</div>
+                    <div class="partner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M4.5 5.5l2 2M19.5 5.5l-2 2M3 13h3M18 13h3"/><path d="m7 20 5-10 5 10M9 16h6"/></svg></div>
                     <h3>Pray For Us</h3>
                     <p>Intercede for safe travels, open hearts, and powerful encounters. Your prayers are the foundation of this mission's success.</p>
                 </div>
 
                 <div class="partner-card">
-                    <div class="partner-icon">🎁</div>
+                    <div class="partner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v9h14v-9M12 8v13"/><path d="M12 8H8a3 3 0 1 1 3-3l1 3Zm0 0h4a3 3 0 1 0-3-3l-1 3Z"/></svg></div>
                     <h3>Donate Items</h3>
                     <p>Contribute toys, non-perishable foods, or clothing. These practical gifts meet immediate needs and open doors for ministry.</p>
                 </div>
 
                 <div class="partner-card">
-                    <div class="partner-icon">💰</div>
+                    <div class="partner-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div>
                     <h3>Give Financially</h3>
                     <p>Your financial seed funds transportation, supplies, and resources that amplify our reach and deepen our impact in communities.</p>
                 </div>
@@ -581,16 +582,16 @@
                 <h3>Banking Details</h3>
                 <div class="bank-info">
                     <div class="bank-row">
-                        <span class="label">Account Name:</span>
-                        <span class="value">ENC Wits Leaders</span>
+                        <span class="label">Account Holder:</span>
+                        <span class="value">MR AUSTIN BOSHEGO</span>
                     </div>
                     <div class="bank-row">
                         <span class="label">Account Type:</span>
-                        <span class="value">Savings</span>
+                        <span class="value">Savings Account</span>
                     </div>
                     <div class="bank-row">
                         <span class="label">Account Number:</span>
-                        <span class="value strong">1611867329</span>
+                        <span class="value strong">2592115753</span>
                     </div>
                     <div class="bank-row">
                         <span class="label">Branch Code:</span>
@@ -599,6 +600,10 @@
                     <div class="bank-row">
                         <span class="label">Bank:</span>
                         <span class="value">Capitec</span>
+                    </div>
+                    <div class="bank-row">
+                        <span class="label">PayShap:</span>
+                        <span class="value">0637807248@CAPITEC</span>
                     </div>
                     <div class="bank-row highlight">
                         <span class="label">Reference:</span>
@@ -619,138 +624,450 @@
         </section>
 
         <div class="container">
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Images will be loaded here dynamically -->
-            </div>
+<section class="mission-album" aria-label="December 2025"><h2 class="section-title">December 2025</h2><p class="section-subtitle">Photos and videos from our mission</p><div class="media-grid"><figure class="media-card"><video controls playsinline preload="metadata" aria-label="December 2025 video 1"><source src="images/2025%20December/0b272c8b-7c1a-4a45-b80a-0964ea9617c8.mp4">Your browser cannot play this video.</video><figcaption><a href="images/2025%20December/0b272c8b-7c1a-4a45-b80a-0964ea9617c8.mp4" target="_blank" rel="noopener">Open or download video</a></figcaption></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/8f130bd1-b40f-470a-bd4e-e58752fafbaf.jpg" aria-label="View December 2025 photo 2"><img src="images/2025%20December/8f130bd1-b40f-470a-bd4e-e58752fafbaf.jpg" alt="Lesotho mission, December 2025, photo 2" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/f32f293f-b251-4602-8bf9-0995c74b36ec.jpg" aria-label="View December 2025 photo 3"><img src="images/2025%20December/f32f293f-b251-4602-8bf9-0995c74b36ec.jpg" alt="Lesotho mission, December 2025, photo 3" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_1659.jpg" aria-label="View December 2025 photo 4"><img src="images/2025%20December/IMG_1659.jpg" alt="Lesotho mission, December 2025, photo 4" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_1691.jpg" aria-label="View December 2025 photo 5"><img src="images/2025%20December/IMG_1691.jpg" alt="Lesotho mission, December 2025, photo 5" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_2046.jpg" aria-label="View December 2025 photo 6"><img src="images/2025%20December/IMG_2046.jpg" alt="Lesotho mission, December 2025, photo 6" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_2126.jpg" aria-label="View December 2025 photo 7"><img src="images/2025%20December/IMG_2126.jpg" alt="Lesotho mission, December 2025, photo 7" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><video controls playsinline preload="metadata" aria-label="December 2025 video 8"><source src="images/2025%20December/IMG_2134.MOV">Your browser cannot play this video.</video><figcaption><a href="images/2025%20December/IMG_2134.MOV" target="_blank" rel="noopener">Open or download video</a></figcaption></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_2210.jpg" aria-label="View December 2025 photo 9"><img src="images/2025%20December/IMG_2210.jpg" alt="Lesotho mission, December 2025, photo 9" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_9093.JPG" aria-label="View December 2025 photo 10"><img src="images/2025%20December/IMG_9093.JPG" alt="Lesotho mission, December 2025, photo 10" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_9280.JPG" aria-label="View December 2025 photo 11"><img src="images/2025%20December/IMG_9280.JPG" alt="Lesotho mission, December 2025, photo 11" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_9293.JPG" aria-label="View December 2025 photo 12"><img src="images/2025%20December/IMG_9293.JPG" alt="Lesotho mission, December 2025, photo 12" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_9299.JPG" aria-label="View December 2025 photo 13"><img src="images/2025%20December/IMG_9299.JPG" alt="Lesotho mission, December 2025, photo 13" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_9322.JPG" aria-label="View December 2025 photo 14"><img src="images/2025%20December/IMG_9322.JPG" alt="Lesotho mission, December 2025, photo 14" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG_20251204_143621.jpg" aria-label="View December 2025 photo 15"><img src="images/2025%20December/IMG_20251204_143621.jpg" alt="Lesotho mission, December 2025, photo 15" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/IMG-20251205-WA0028.jpg" aria-label="View December 2025 photo 16"><img src="images/2025%20December/IMG-20251205-WA0028.jpg" alt="Lesotho mission, December 2025, photo 16" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.44%20(1).jpeg" aria-label="View December 2025 photo 17"><img src="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.44%20(1).jpeg" alt="Lesotho mission, December 2025, photo 17" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.44.jpeg" aria-label="View December 2025 photo 18"><img src="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.44.jpeg" alt="Lesotho mission, December 2025, photo 18" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.45%20(1).jpeg" aria-label="View December 2025 photo 19"><img src="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.45%20(1).jpeg" alt="Lesotho mission, December 2025, photo 19" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.45.jpeg" aria-label="View December 2025 photo 20"><img src="images/2025%20December/WhatsApp%20Image%202026-10-20%20at%2020.25.45.jpeg" alt="Lesotho mission, December 2025, photo 20" loading="lazy" decoding="async"></button></figure></div></section>
+<section class="mission-album" aria-label="September 2025"><h2 class="section-title">September 2025</h2><p class="section-subtitle">Photos and videos from our mission</p><div class="media-grid"><figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0016.jpg" aria-label="View September 2025 photo 1"><img src="images/2025/IMG-20251109-WA0016.jpg" alt="Lesotho mission, September 2025, photo 1" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0021.jpg" aria-label="View September 2025 photo 2"><img src="images/2025/IMG-20251109-WA0021.jpg" alt="Lesotho mission, September 2025, photo 2" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0022.jpg" aria-label="View September 2025 photo 3"><img src="images/2025/IMG-20251109-WA0022.jpg" alt="Lesotho mission, September 2025, photo 3" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0023.jpg" aria-label="View September 2025 photo 4"><img src="images/2025/IMG-20251109-WA0023.jpg" alt="Lesotho mission, September 2025, photo 4" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0024.jpg" aria-label="View September 2025 photo 5"><img src="images/2025/IMG-20251109-WA0024.jpg" alt="Lesotho mission, September 2025, photo 5" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0025.jpg" aria-label="View September 2025 photo 6"><img src="images/2025/IMG-20251109-WA0025.jpg" alt="Lesotho mission, September 2025, photo 6" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0026.jpg" aria-label="View September 2025 photo 7"><img src="images/2025/IMG-20251109-WA0026.jpg" alt="Lesotho mission, September 2025, photo 7" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0027.jpg" aria-label="View September 2025 photo 8"><img src="images/2025/IMG-20251109-WA0027.jpg" alt="Lesotho mission, September 2025, photo 8" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0028.jpg" aria-label="View September 2025 photo 9"><img src="images/2025/IMG-20251109-WA0028.jpg" alt="Lesotho mission, September 2025, photo 9" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0029.jpg" aria-label="View September 2025 photo 10"><img src="images/2025/IMG-20251109-WA0029.jpg" alt="Lesotho mission, September 2025, photo 10" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0030.jpg" aria-label="View September 2025 photo 11"><img src="images/2025/IMG-20251109-WA0030.jpg" alt="Lesotho mission, September 2025, photo 11" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0031.jpg" aria-label="View September 2025 photo 12"><img src="images/2025/IMG-20251109-WA0031.jpg" alt="Lesotho mission, September 2025, photo 12" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0032.jpg" aria-label="View September 2025 photo 13"><img src="images/2025/IMG-20251109-WA0032.jpg" alt="Lesotho mission, September 2025, photo 13" loading="lazy" decoding="async"></button></figure>
+<figure class="media-card"><button class="photo-open" type="button" data-photo="images/2025/IMG-20251109-WA0033.jpg" aria-label="View September 2025 photo 14"><img src="images/2025/IMG-20251109-WA0033.jpg" alt="Lesotho mission, September 2025, photo 14" loading="lazy" decoding="async"></button></figure></div></section>
+<section class="mission-album" aria-label="Google Photos album"><h2 class="section-title">Full Photo Album</h2><p class="section-subtitle">Explore more moments from the mission</p>
+            <p id="album-status" role="status" style="text-align: center; margin-bottom: 1rem;">Select Gallery to load the photo album.</p>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/VqqqtFxVBcLYVoPZ6"
+  data-title="Lesotho Mission 2025"
+  data-description="Moments of impact, faith, and community from our outreach in Lesotho">
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMlewHX7bNpoieMpLdWVdyk4qLew9r3zCEmxEcOqpi8SFYC0LSUCa7PuO5l8SCR6bekzcdo3AIRyLEldiBcUvGV_GBZ40KM1xfvZ40HwvFL_FBit80N=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPkNUJ3k0Yg0SpMmmpsvFypn35WEl616mU2Psf-dF2sbTLRWe8HChdQCYE3KdQSXNn9ak_Qop-PLLn-ExLO7M_i-ua80ExZ31v28RULwz0AwUAUUvg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPAmatIEI3-pc-uFUlWtut4WsL7-bhLCs2JhT6O5xEc1RU7Ss8-rUy9tBlOZJErLV366ALWslc-ze-TNjC9QOTxmIwsvCHdvWtGD0h0-Q_T6gMyrOg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMAfakkg6KImz_HGKOzg2V9J3op5ShKDK3-0TO9ScPpF8-epXvCDp1Ic_wS-xzvRbaxq0Npq4P4JozHlR-P4Xf0YElkTFIjgbCg5xaUo61gmc-7QxXw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOxTsyR7lSgR6lktS8NJd0ELbRRJ66Hu-FUV4ayXn3yNJonF9CWloXpgw79vr5hp0yke-_hv_XQQfBBOJc49ZI_IzfbR3CDW05HzQdnxkO5d82647Ic=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMAIQPAd4lVNJW5norP07t9MwlBtkKFhU6fvXCjRrAQuXaGDJkLQL-aCizIn9iPaMESTkGrm1dXxnOdgVzkWOG1er_Z1Po8hZLC5ftjMMMXkzwCrNT8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMWcM-JeP_Qet9t-u6GhACB0rI7jmhaB_dWS8amn5nB5UKyM2AuAB_0lcot2TBghoPqlkViyKVdICEHB2A1wujmpB9KKF571AWk4o_3HLVrVH6gFCKn=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMbUqxPUi6o6WnHGkASiUvlQ8LAd9SIB2_FwtZJpnrIX4ZEWLtWlaXZg3lMxz2gvwyLKxrLUOmgu9Uo0hal4uDGsaK-6dzaFyGiGXD28t5irFxndqD7=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNgvpZtm_ZeIh4gOpAH-DL97SCMPrryQ8A57KefSnXejbMOUlr1BQwbdOkPxswAZRbtCKm150GhajNLopQ6jb-UP8Yg6HcCDDhh0NpXDJrVaz_E2Gj7=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPEsDgHp5jbj8H7XtlwTcYWEDHmzuX6lAWTYEj47DEIv5_u0LHWmtSOfX0HFhhRM5OvsvjItyuQWoOsJeI_1CiV80WtOOUVTkbqqOR5DUdmWjYzvdV-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOg2uDCQkFpJ0ImgWoL_Fm15mMpT2V4bEDa8__ilGXInabylorTFLTmm9zM24LS7YS9KYLV2XDXbju7vkRxVJjYV8OOdR7GenSLWVGyv7WsmxX514hu=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNFqT8c43yI2AtLbcmpxCIveq8Tard1mbpaWkLr-Rws2YdjDsSpiplo9eVvB7dTuxwhy1Xh4DeH5DWhfqlNVmjmWIewI8sMhQAOIMuuWqKNwmker0cH=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNlK3yGiNW3hAN0-8lycZKPnzo25DpiPzGqk6YD1R4IU6E7-Kxh4xFMhL9E6SlqbUVXL3IhimSgFKoEHO40jcuujWCjaHlYBRQVGTel08aqqArl2jAc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO-WgbetxzDqilVOw687G8-8pro97NxZMoJLzMdO7zgAZQILa8-QxulEY5pcBgnt4ZNxPuD7TtorXf_2HPXfWKH8WxKVQMkhamqWCq2HFoO9m80gRg_=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNEq0z-bK5WtCEkwv6zr63FBYbob1CgeG9NpDMH3FVyFrEmGboYd9cx8exdjsH00hQ3AgU95_nmL5xYxBaUOUEFz3j8d0cJm5lFDRJnoznVbwR_kZTG=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOop36GQyrrBfEGrNeUa2S0VBdS2TNrQbRBXFHDBxlE1-ihLVQPaYxHeWMtMXwDb100sHLBWf1G19NVbE1HzONCXzHAJ8DHU8liN35FopUyOyINUD0U=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO4lZcBHtr1yLDM79AEwLJc5exaDS3q-EQMP4QUTFrAvJSApjo94Plgo-9bzSdnNVQoHEmiLY2g-gQDbmCsImMGuPr4ksUwqHG8mVC9vP68wNNSSx4S=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMVQAj1KccZUI8uLs8ojMU-LjMqL6diTnCOUk6aKy96Bexw1euOCtazwAzf6r27WxnljMeKqborcaUlouYC8KtCJcq4fMOIvPVzeJaq138gsnQo0wWY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMCXXWGe1P7-4zHTfVtXQYmWIMfVN3it0v914JEVNey_F-mdcgOO6VQI1HgodVKef83fv3feMcqn9Co-O_0Xfomj-_VSYRNNjo4bWVE_L-QOs29FZ--=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMIaAgPIY69gnYiSNDqr5TMmV2_oiBc94upbkuDFxRvcC3DQXoUaBrTgzrS6LlLbkeRgvkdkN409M-7pW9JZ0sKWYERoJ_6y60v_fwbG5u8woDH5aUM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPyPImTM9hHWQue-Q8urGc9jPBmWtc5bokU3aaS1ZBA2e-jBZnR9wmpKToHCKsKNVVXzJElpKp3nox6QJ65agGtORj5_9KV71aHPwxuJMGDi70-jTSM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPL4vvLAkXoX0OT4jHTkQCGE2uM4h5xmWofj7iz56D6qQJynOsCwxrpgblAIBuVWZ5Abbn7oPjjEyM3cm7vaZosdK1ziB4wjdfL0l2sRtO1f2YLpQYn=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP7lUmAUjJUODDORj6lpK74Y1e4XlvBnMgcjy_2QcWSz5lOBEfFGom7CQMlF-pWWFZ_SP3ByrqWETm87B5W5j7ko00u3NLRIiJYzAmURQ1vmbzqQqbU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPeYEBawAr6Ya0dbgjZy8FFHlWMV-2L7jExsmxmPOnt2eQ0l-QMgz3pGWDKtrIQB_GkUwdSDyi2_zI0dMWkUfSnQ7WUsjhqqoJ1sLkAoSACntm7oLPd=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMlY2bhCH2vLTjhxJgGtwQmuKJ9SRkb006-uI599DL6rUkSUJyWO9BPAEDIk-PW3yXUirC4w9GGoXGXjGSF3rmgQEtsWA_a8xrJVhl38MvrHqukdo07=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMnjEM_ZUCxYZvWzTiQ5lthko22wDI3SywXxyGn66ybHQFP6R-tEFK2pZqkwypF26mNXotjXUX2zhd4Yqyd6vWci572upzqJ980aZd7iWbu5MXLRk6o=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNnJbDbOm0d81h1w60rAFLl42-bgL6DxMxKqDPWi4NupHqwZYUZ0F_JDA1g-8bMBOQ_cQQQv-vdcOUy1rEH3XWeKUT1WbYYRw1QVFB3cIDpBi5RONs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNh917O8xMiLDrwMufQm5BRs579F1MmcAOQxHPTw1wjGl7H8pUVRHHKaRVc6eTAL0z6ig-QOyIZtI4qAiUfYN1ZdTGfFROFDu7QjxYLlpd3rYZMHNM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNZn4azvUwS-zaTmQABdf-UqGCyn8gDbWhj5luCgr40n4X9wMWlpgQ9kMb3evbpGEYyswDWqO1oLMYbXaOOLlJFtt9YyQuDFGagTI3PdEp4cjYJnMQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMLqs8v2nrYTiTrG9p2pyBRkLbW0SZh_uaBKBG5s-HYHaobSFWctapnVi4d176c3BMjwKaXn4W9mr4NkyYVY7nrYLU1qq2eIw7Hox9EBwNKPgo9hhI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMf2WiwQiX8NMVWXdjnmJDll_MIctoEJPNjX0LkHDFJGMEZ3BwamvQGaXmf0Z0ch2cxmBsfqbC-A0gFq0SEncuYTbIhKB6NbJ84YYk0cO1ivgaEaII=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOkoT7CB8W1rr9tAGS6FVd4yXRuw6gGiaBSyvfiLywqoG_wDFiegrAnKQNplP_mdy7EuhN767_H4IxKSlPt1blRiuIQfPxFn0QeBZy_dYoPfLyVsixo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM-8LBp5U6BvyVXm3OE_5hKacpXn7gpMfuFSks_eej60u01ZeKYJjmc0T8D_Zq9V-OAjt2auwtx2-qQq6OBmqhb4i80ashMPmoQmtIx8-Pa5oPEijM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN9lK3bSU2Fhr9kOr_0Gax1cTrHXpNXhYG7FodrJFV-0K9-Ijhq4U5tHGCBVd6Uz3kth3M_Q1YIkQA29GWOool5xvG71G5lx6iVe4061LkwweMFll4=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNMV_3HoVjS3lw8CHywvRQS3oxMmJKmYUtBYrc-XOXaW35eskWApJIJbbYxf-AdpKuneo7RSeG_ONhLldH_OkQSEgrDZH2Y_CHzTl4VS2oFxSciD0s=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO6khxOKBcKowHvfUBCqZOQPa6BdgA_hxEz791sWkKv-lNipvHPe3fyBcciYXoGKVAgJyPkbAG9dNtaT3SCv6-DGQdWl2ix5yxqwhadF5AyjdXei40=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNxM1oBtc8Yc28XKo2eXEyQQqHdzzLfu06mZ_Onhm30EqrZQJpyKE1w2yWb79Yb2JB-iK7RkZ0WgJw5A45Vk_BokyhlcU9sMxxayad6gKSWCUbf4g8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO6hdEzb1lZO9AXFnV-oPI1uhYSF5ECdAkYAWY4__Ge-PXXEMNoFnLZzDLuigX_eqELfeX143vK1EDd0y0OZqUlGWo0eyZOofr5ZvIt66BN2qd_9bE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP_FNJhCyUgzo6DcJSbdjFzlLpfqoWEYvRw6cYetNqNEeUCFjCD8Z-2eLfERbzYUdxbFkC0XxwasF83Pqnyiv3zchp2LbmBtlihEG1kwaT7QLQusrJd=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOYQBfyvgBVnvA3GvEERCU-n-ffyxfc0fWM89qvW9AWkJAVwV75O6a_1ih1GchnTcGWHwZlev4HUJ1N3tmsMw0AcBxUPWRRnPMfPZM5mPR1xJSMU8uM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOB3qGakTDKa-Xnk3XiVuByUqS0eCXfHtfZ8NF_aPGH5Z77yBVJHNv6v7RFOdxz5zTWYkaiV1LaWHnsAWuc8iYXyb3I8USvXXAmpYdb6uh-keg1hOr-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMQ5DccsWqUuRh64vlwbFkSA5JREzoEKf2gapYHVMTpv6TLsWRpEHeRtz5ktXbWZheeLmdLzVeGcvNgW53gSdXPLOi9LTAgZpJW2G-unDTiojL7yLLL=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOOFYnYT1zJWzPPN1lBgtrQXB8ajGd9iMAuvKa93_HI-BZQGTiduDZ-DL6fHGcP2MBNEeP9XsY4ysXVFGtDZqQy1SbMj1MvYks00L0f02G4SusMIycZ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNaFi4msfy0ofnr_wwjoh2aKhNf9Lb90l36aX0n9Gguov1Aeujx6b9S3SukAOU1aW7G_HUcqBIrOopzqzgBbXPF15PIcV6XnVM7JBwKRVHhdTzsLXFf=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP2Rp-gPf_MYpkjcFi6q9I4hoGOkqhLkd1kjcoZk8mnkswiZFsN02CC-ZljK8PyBVKjWXJAVW5-KBrRulnpfCPBKxj5eZCc-eUnqRoM0kzTnclJ9_LA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMEJdQWnfCezLcuXD1XzC7TgVhH_8FC906FwSF6OY9pJuUQFvipoK7et1LbBTg8nqxoAia4AlmdRPgceev3AKA3qXe69HGgKDKkbjyNl-iE1M4d2SU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMiLN-CVx-9WA1SlOviqd05Iy_eorQfWUpjArgXTxSTrKl0nW8wxKx0G_0Hgifg2TeSah7t0hnww56DWqBncvjD5o1ZHVe1539Unk3LUizTlMb3FVNq=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNxK-xsv2lXHbFMji0Tx22USdMZ4EwkNT7T47HBrAitEgB50bW7c_C6fRmTQ_c5bnQT6qLvpIau6BMaXPglqak8RJteR9kmv2oL_JOjrO8VK2vaskg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMf_zSg8jaBaO4FAQKWAILGh6_CC6sogy38qylBZG_UtQ82WRNRhRnAir6q9O9yyxc25jxvS0XvO-Acn84inhNhqBC7lq9eS-lIvaPSAyZOdUZqMd4I=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNwbCU2NqT1Vq5MUeKqAze1FRqPRBvAmiGi6Xo4x0aJtZyIz1cNPfUMCRtGWYoVogW18NFjkZe6OaKfY3G4K-lm1Q7MRJcFZWcxA25Y5aCBn58ClpTr=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOV_UHE8hgI8fqi2dBhNxzsIv2BlZYqdaPZ0cDzi8PyaLtdiq0CXmO0lyJ2nguSYq-lUAjiwwwsR5mSLvYLDYgbXBLn7jY3oRbrT9B3J3M0KQ6jGDJH=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNlp20RFUHvqBbEpGAuGpepa2Nk6o0AsdT6Oiek_L0QzB12p7XFJF-dapukOScXCW12KkkZ471wLSgn0I11dC3dXuBczCCWKiXx3Gq2gI7J69BZlUo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO2KTywh9-9vuqLQJ4yCX2_EceEZK_j_V03N9PeaLQ4vPtj_xVi7qjwJu8n9ve6CQNAEn9HCtAJFYVEYHy6EM08u2LveC9hzjD9S716LO74RdmMRD0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMB6eoz3LGcL9Tk2OOJKwpfsKv033bhTg_gd0vBFI8KXjNmkJnVxPbH8z1v45ciPSfiv1SwKTr6-lC87L6ubyvTElvmrWqgST73FSKempiD5X6QI84=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPshjcZf2aw3nA3m_MLO-f_EQE0TbOKmubXYlsb67YggVYwVyvH6txQor7qLvbQ48wb_j_GnNCnEasv7B9xpssApcDOzNpoKmo7THGe8W2051vc_fM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNQ0ZLFAJx9i0KDqRV1Tla9M8o1AyUSbVkJL78IXSjU6Bpl2W5QRgr_mq0nCmyg8DXKc39rKo32uWFi1pil3F4fkGFa2rAjWW0NWEUc-rukhEZ2Hzp-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPQZ8qvdEwebwm9c3dboxNy--sA1EXQfS1XKFrePRs866T4Gk1gNq5dbR-sb3xZ2A5PKEy0H0-twCVN_fAYKSCK-Xspa9eeaPHVE9Lq98k-7NlOo74=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMXB6UA35W5lJcCfkEWs3CTEmTspQde_SCqpKIOqD3LDJjyA5Jd5-Jh_0t31YOVlf5lrciQu_rih21VuHCq-9AVFQdw9KKGvZ-sZXjHQjGdhBoq1ho=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMlhd8s7z4PVJb1MIfmFxw4hPjkFoR4L_BE7nSXMsre8slGbdi9cJ_VR9DWQKU9B3hezqlh7ybRVbfTRxtqSScRzzpp97gxyTC7cx7kubu9Pf0uf6hd=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMioKL34ognhCwnXruDcNGfvp7_3AjR_tu9flNOoqgJ4tlUNRm61TnH0N0jv3lQLalulWStX5RefdSNEJ0SpnkOt5DqtXb5R_1qXyXhjoTVnjfrlGQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNV9hHNHRnAr_Y-Qu7Q4otQ9rsZndMslw1ZtmZMiVgteun4CwRqRrmi4fyV_1u0tHQA28ADKn8pkZFUsTWsmNYqHtUjraGLmB-Pb0dC4PQlk1hbTtk=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOuigojNlb6zIn4UhiAeAxzJLo2pffA0dY2KFczTdg7Z_ygQ1nn5k8tCWXfIGaaiVg9wy48etHxurBFIVaw7V7KE_LMN3hyA27OqXR1Xq4HY28SWAI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM2zXvO4LJ5cFbEg0dd7qptitFMnjt1JRfzZMNfK91YE5twPIeD8FjYCXV12a8FdXIsXpRsMfafo8DUBskD8yVWkhMZrHDOm9Fh5mZxT7gXOKmWCpZg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO9dBdsor7wdf1KNgZ-zDIKkbbtWTUGxgidZzDi83i32MJEi4W9k_iUSrh1cYZLR8LCuMjS2KuRmnKQy2HBeVITn-3r05dWbprfP4G4RG7L-YqSFgGj=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMDVqI6TZUCCj4CPNkrZTH3PcLBFUVbBeI-Rb3CgK0bMkLPEmskNHUhju7MTfOVwOALKGqXysvjjnQ4HR3JFqJqmCRcqThWiuSruuYexYsl2_-Sq4PD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPV5uclEWsRGjOH46v6pHv_2MVDqMREHFuwlHapHZJrjh7EO9Pnucrr_fVYw5ncSs4pygakeAH9l-3TlhLlo7Fh0snCNoedPAUNA3XT8hvsXP6W1bA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNLZMziTyMiD041n_RQ5-m3qj87mgkAQdB_rMWe1Vjr-vAfeZ9UbpN5thR4n2iB7lx5F9Togw3xgATi0g_nDrLtkiWeLGkFTGe-aMoB6TqxMcWogmAs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOeWTIQA9qNB-vGYV46re2p1LtW0yD-tJ-rDox0yRFK6ABBqUn--UqpTEv6Nv5bjTtlnTm2wXcdb4SlMD6R_MZX9jkP5G0bt-bmKNmDPePmtMx2-Lf1=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOvN6DcfbKxPg2Xc_yY9oEhE398GoEbLmR6o88KwZC4MPSidlvkE9i-0JzU63bQWcZ2sgkRhl8sENccOni_3WHnIycbtsGfp7p8yY6A_LWsh-wpyuWh=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMa_jSchembP_TUE43Q7Zm_oMWMf5TUfFIiByvYYEbqzCEhbR2xaTBvNmJ5JU4U_u4AZFvmQAAlHjc-rmuaB8nxQKVL-BftAE7rntKBtEhXD00K5UEW=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO5f_1owRqk76I_DweBu-CsUKAY07S7lEJ1jWRq3_fD0_WD_ZmCSdGbUJ2o0ER8Dkv3C-r1GNYhGuFj3Mb6xC148FAJAON-Rc_RwCnPooLgq2GgSJI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOHfq5Gwem5gGPjcs1JlUwLcKXZrqVGv-Iv-lMf7L9tIoPosdU9w7do98OPcFm08jc88W9AN2vYFy9tm5EcIaYVoZo62jGiV3I7iH8WQsjGW88K2cY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOGeym5qEirj7lNwz0cEcp6b2kXWgovDVXENvUBaiXX1FAKdF3NcLZFafv180_g5BzAGAfcgZ7ApajXadjS3OsoDMP20xtbFy7mj9IBgdWRsBWjn74=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNdc4YyflA0OoHbrWKXH8M0PMuYEhp94HYJmfYzAHhoon85Tbd9foDSSafHD0ef9-KqSkJ5rXX6W-jXPgtxwGNP_FRNHhD2kK9k5kCdXUgTJTRxfX8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPJT-q0LQmhfRqMWIeTHdprfOPYXc-pKgcPWrE2d7McVSYzlT5IUOUQ45OxOB5dN7VAKpKnScYipISSJ5uIs01eEtQ5iu7Po-2GYHbU-olHM1A9t8Nh=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPX11nI271fHMvBxwASxs4PtjQwv5eB6w5n5WnR4gwItZZ57pFn_bc1WPLxy-DKTLfE7-dvaOQZ1JXzY6t26KUv5HZ1GJiEGYCW445kNDvgwri86LGC=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOx-fzncKL06JDoCKm9S1pGcurk2CYOYTWENhZQJIVklG_iwi_H7Mn1JEstl5g9ThLJUlhKsgTQytirRttE__hp2wNMe4QEAI04gYFyUbsPFiCj4LOo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOagEl-CXLaIeWtnUmETl706IWRX9f_xvag_XB9WhSjL4J7beZiwaG4bspQmxnX_pV9oSu0z-KzhAc2TvcGN5opmRKd0_yZxx8oPAq-bb0yjnQwda8P=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNIKX_yXToDmjoSl5I5qOsi5VuD1KKoaPJyCaITWedl6f2MdQMsQRi38XAaUHV7Ilaxhchtmjslu7rdehuTIyLH3iOZovvJrtX2IeF65XqnwI6JsBAP=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMi1_qwN-KUJ43JVvHwH6kl1-v-gU-nwbzo2osbFpdTP2NBiIAHU7iQKtzVffgAK_TMiN4pKc6yoCO80IANV3doKXPlMLpxNvj1rAeUz2vyIc6TDpzZ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOKVX6Kl3Wv5Wr1GykBf0CN0dxrfS1rqkiV5eeJiIgsZAwtv1JieBW_9pILQROKOfjSSUvg5WGzVc8Bh5_7Cj8_1VVbB3oJZ_CcGGmGMgkfH3S-vD8S=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP693uBNuu71EKpAtqYbs0h_VaHqhkENdY0CEQ1oqkt0EipZLftLz4pYwFTx5S1C2V73LKRSrw2kNA16n8JsoXPqbVyaeMQvI0I7jjeyoavUoTsoRzy=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNGkec7v8wXszlo9QqP4nQTXYElmpe_qUDZLmxArBAx_FAs02--N-QlU9NztBBTQxZpDXAQ4693xLz661TsjOhdYV1jeUgVcP64CTpIffmfbf6O47au=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNGuR1dAnt6dt57tYbnVpz5SDb7Dn4Ez6e7JckLrFxAAXCN-SknuqGJTHW6WTJkJx1gDqBwgFoP51C9yl0IMzj4m1nQgB4fzWh0gI3JkjPvP3g8bwy_=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPxZXnBpzIwj7-r_7Coizaizm-ZA4veGAMD1jGMULXAkUk9s6v5pUwfy8rWhd4lmrrjoSnBaG5L1cT28xjGak0lcAqbQW3W90FDiyeqblgsS8UdIpvm=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMWH7_-eDOPZkztvsLECQDnJL5sIK87uWELn8NM8_7xhV65DnT6Tr1aijUsFy44b3npCvi6ud5EW6QxPLKltGxP0JJb8LS1Xr7Q4jB33SHKPNaGZmQ5=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNtw590C_KgXjJvJmXBGWelgZs2KLEwEvja0j6EIORAzIR-MPzwf7usZvcd3sfza2HY9RbcVeYIZoQkmp720iXGMqmgupcMK7JmERsIwm_R_Oi2s0dc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOHjMRyMJ7Qso5zHPmZyjfrnwAhy3oNDit7t_S3LWpBBFGTChv6VF6yCJJZfLHHZi8p_xkyLFhoCR3Ytah0_1y8kmzuMmthDQ3m4riySc1l3sLtwes=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczObPmN3CAQea1CNMDRNlWR6TwuQY5z2EQ18iPEkXP14np8-AHcqlryj9WbTNbnaa6YULFrTYMHKJrbsHrZ4x18gH_XSUcvwyuBxzonBaWQ1VeXDcHU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMGvTS0DXL_LjSpUjkR5Bu0MzWVqKxUCy8Y0jAsOe_gdhjBrBQ3x9yNrObU-yk3VKV4zzu90bneX2UczDwnjJN2-r2KYTeVAywz-oXH6_mTjBAqNpi-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOgsVMYFJqgnEf7ZnK1E56HGWhyGuhWOsa0XWmKL1LSiSGeeVbKEWWr0l-b5WvjQE4oJkfroAG3DkTbKfIiLyCFV3zo7EjkWsaB-TGYJcqkRUNJNdhn=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNJYucIA00li1_HSYzub62hDsiw4mrPDzz1NzF9HwSC0Eyx3XAJc6HtmkQ4sh2sYPXI383YUyKbz0RC-x5PzKF4F0hZ-sycC_RDWXysRosxzzyCJnEJ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOIsbSiR2jTqMwac7wxi8lTCws-kzYnGtWU0qtjmYzCSb444pYf2uLbC56IsgjbKkY85ywAvsUBjICzeolq-Vdqgkunl_471h0Q33ESiuvuz6klAZq6=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPoEWt9h2LI2blx6nhju6zPsHIcm2NsAxEJdibp2_B7BC2wSjjMsvmsJxFa7sO7wRZQdsZ6dAfvFePXX2b67r_tAwLXYxbmLyM_ShNJ2OrPrR0sQdUR=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN_sqVstGXDSPqdlvtB7lzmrzVHVdqMODPXomZOs0EYQDSdQFCy3tYKg1CECYVgPahu0lmWM4QvmfW1Pdlj9qt_fkcOZ4i4LpNQ4QDbKKDEBB3nmKNK=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMlfL2sSh5euiSrxJvaHVp_zmo1b53VYvTesTrqlm-Wsj2dQpCNDcCp-gqtYXh4uyCq1uy71YYupr_ERgrbJNut9ehUHYyRnLidHi9rqs7qnjFWLr0w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNjmj29rzc-tQwyt8f6BRE8ChMHsH5-KJZL1UmIZxvefcs1UFXZ2812jouOZ78yfhHyEhC1c2xyy0ydooeqjMIpKpJRM7R-zVeVs_yvewchbJGcebhe=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM50-kwvWi5nKxsbaR6QSJW4FbVO88_Kr_waHv2b8KWO55GdaOMHmE5zsb8IgR06X9TT2iwYjIH-LlJoRlIfj-puMZpDajDiR3nNQAZ8-JeOruMuFxl=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPdAy_gW5EGFqxr21_5BDSegYlgQ7tFS2GCg1fyuTd7XFBflJ0sO-hoYtcstBgpVz6MJjfQTZOhxrRCWkAmIyHGWfP1dSOHAqAU2S9Sh8TeweA4mTMu=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczODVTENrItv5sS46u0wnT1_OPGxytSsDIsq_1lweL--2hs_-64n-uigrZGnjL2cN7cMvzssMzKAfw6DKiNgPSyNLZqlvuLBDaLu14MZaPosvuAlHZNI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOOssc_231xdVRU1k12g9nu5n8KWP37x2LBGjpvFhiy4Kbt69s6CYbmtjLnBvihr-mWsbIaYaX8P-jZVuXq8s5O8Wcu0uI7LwCpnZn-q-vBK3xmXK2A=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM5AApyACszMweaUSdj1004JP89X6VqBJFkbMtTaTxCxsepTmw4IVprUVnNChu-5RCu4iNHMYhl3sVgkGqVu_Pdz33juJ4jNZoeeBYVx_cV8y60N6Vu=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMhJC3d38HvVhMZvZ-J3dlsADt7CQY636T9mUkp4htr1n-u3wAtylRQh7_UWhpnsZq992Syyi1JiPGunVQjz_8YSDx4teJ5lGOtjSlcEnGUtsr-dClh=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO9TqQAY3hUw_90zbcQeQNQ3mF-j8bbzQiWxdSxHSv5GoKWAO0NsSzV4ARy90McZkLAQ7GWL4fuW-PkrKIx9PvxeOe-LLu6Clbjz261nokGuLy5C8Jm=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOdqF3SfLavEpc4_h7mwUne_Y5W1W6AF472v7hCLCC-ctrLEC4PyNHTZykW4X1gQG8u760u5Xb-deBiB2nERhH3jxMXzgwaT2VBKlq2ExsrOrcoSQKI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPImGy6QzST8_UFqNj8Jd44Mf42YTWqPosW4pEOftzLVoW1oBHlzbqLyZPkD-wprPjq6YFaywciZ4BCWmk5vcGSPosqiw7Bb4G5WZRRZcTtV5Xdj27_=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOkVjvYdpdvobOJ14ykHuJE6FcVUWLXDhA-EdYzpykZ7ei2xARbkfKjZ0NrDgCNl2IydHBHTFiuCx2wZTHN63iSFF7gYxrbHIXaFuP1BPXIua7sogtv=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMIFfDW2QasiXggOpkirsZ27J9GCInoVtObF9Y56n6qdkHj9MSyG-s8AbCX4XQBqTOg9J1FW9ziguWCOANC8-reZFq8ZiX-ztuEz3sbkWIxZjEAlmzQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPxabfeakSdV8xcFGATrZzxW5oBToL2woR9ZvaMZboZT3OCjYQ6rEusCU4RMSZN6rSvKubkeJ2wzrmxtlU8T3kZSm4tA6IdY_6JyNZS2UZcwXqG1Y-g=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM6IwH2k-zP7OgbKtLi4_IRJ0D9vcGzjRM61WazXHu5WPIubfC45InCY2gbKusB8nsteQUIgb1yJntGR62BbWLGcTerYCPOFJFscsUjDb9NQJr8xd0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPLKGiKq2r3fdXgmK5TtRUOdjP8nMqB6F-mz8YkaIXABH3DBUSC4AYOVA3k0ZXj7yLSF5sL9tcRe_XjbrsSLXJ-LvjAnF22NDVMgPnW_98OB7_i3SqI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOMnRfhunszZtBP-5-Eceb-gOIVWbeYeyecEQkeAP3G2diyYas8ib5l-dNtXlZKPB5yfoBEbVhspEP98YcRoBJgrNsMsm4HuKTXdtnfTUqxDu2loGOE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNJ_-fFGXvTguLbn1UPSsuiHjwrF9QRTRON1naQrqG737NQRrQ3tA7JqMgXqeQuJIila9Y67PsCFQae9xTMAH54wdAuzLUoE5b6q0tfzHJOON4XlCg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPdUfN49MohhxAEiieoI7nlbhrDkoK4wyNvLhce32dStufA1smZuWC1Y2LVnhmoh3cxGwr7qir4WtcVEyRmA4NZo65IfhYKjzmUWRyLTg8vKJepkj9d=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPnsQb-qeDO8V5zN62lV5RUZ81pb3Hue6rTMVNcmybv9OsUqaUFJ7nko_Rip_7OR8P7mrZanmB9VHTx3h3XxZlbUwqjFjEdZu31d4aiSrZ0Gcg3OAs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOlr2qJOyxeWRwBgGSv1qQaCRB7CU6z5Ak9mItL_aQuWbLGf52kh9KLdQhEqKYuyKlPaYmm6sCXjJeauNJj3YTCIlS4JCQAh1NckxIjm_29uQ4Z5ng=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNBrGJKZjw2nsHEwoCd0Rgkqsqjc5Wg-rniLqHTQPvVL0S849kihlyan0xBIN2WFtn-ygd8Pho-pgF0r6uapVWDD0hQnjxHJekEGOWt2oU5LH0CkZk=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMeWO0M2lx6MN5ueTaTOXQZmU-9xwQKS7Zy2IDZF1FsfngszOupCBU05oNuoOGfPRmNxKjxiCbGSGa_HNVqKjYYKUcyxJ6KYSIWNPu4MkejKBaMUfK9=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMe6e2YhMBFmxyq-XlUfsiLEmDWt7X6-QxNGK63yz9N4I0mdxe22vhYVQY-9vD5f6oCV3DaDHixpJXA5t-YXge-ZMFlTdsBqESyqPGk59167XgtmpEY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO0aVhaCIgjwaGxKSj_unDz7-egGI9sMFfFjA-tAvArCf0BeL-PdwPChRr2yvyoJwhnln_lnedhLAXeKBXt5u6U_8ukiQ7hTsS7sjAK_F101foDxhlH=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNhZkxZk9h3tRkgwwR8tYR1XM0lIujL8faCTMcLqHu-s0SijwdnjGX2UIbUB3YRNWoyI83ZHMrhbUIORyy2PlLzRWIzYID7AjNj4EcI02xpBJh3nk4K=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPmoWhzhuc_T9Eh3puJXKwVvT_k0dBhGv8t8OczgEA2Kq8ufOxqJ5NYCPq43H6RXlVaGSrRGKrjLLqUpYjAmHJ8CVrqYqHK_b3u-WH4UASR_76pT3mw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPmfhutzPcu-zXSI7BWR1j8QHUC0OVUW1mj84lsdRAiL9AutVcHN5w6z9RQmlOPnKZY114yJYNVD-gos9jUpRaQ4u-GIooF3SSa1ISdJhxyVO7b9HTv=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPwgDawM_RaaS3phlDTjxJ-fihRNFxXySPkJZPEW_28-bVR2NhQgQZC85yj9h35IXZQOmMoh8igeH1XPI_obUJodrksZx0qgO9MId4R5j41AnS3YLWx=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPG4thOpvM4EOlqGkqK60eNyd6rumTZHwBHMRbTU0R9TX8OE1yjSGJQelGaNkJDR5OGHBHKD8zIGp4aOMC-tvvJS1wujDeE0ZU7WZxC7ES1sV2vSwYC=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNStEV337cYtSg8p6y1fQK0xwoXy3UCfbOlygCO5BeuTGR2d9fD21wbTTliCirz5O3yoMsiXO8D23ev7IiJvx1tPWLoU6DWO05jYoqwyH_ridjXST0w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNW257_ygILiDr53x1WeckKTfGeGD12iEjVLIgvqMogOM8qKxMdo-KlQUZzBdqR6tVvyjLrE0pbx_UiOiWXmor3Sua8uvrEohAZ0s06VkOpHhEN0w8I=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNvxFGR8RMxaHZfgXmeclFnrPRJE4vKnVrmVSGN95oofc0nNoTfxtBsmP_Luh8xLZE_sC05uAWcf-OAYkH2TV8Cf-ZaY55wYyBJziDrCCFDmJF1wNOG=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNoizH8BBJFoRRh6plKos0m9LUdYVtVQNMYuwelqOfhKZRnI5SmUte4pZeUuXuZJOzrZzw-AdDamI6bxfYfJHL7jOTd-xLRYc2x78pbLatnb41ISGXf=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNsXra6Ywy6_EDSQ1B1R2_AGkIeKF7o_F4JDkIVY07aM3QBubwILvi8mgLoKla08aGrwgltGgL62Z55KQEPH2n3baazMGJMbhJIRBZz1tFTAtznUNjH=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNRJoqwPp5caKTGrcAS3kuRsMj1B-e2SniY8DW_MdPR3YOohEO7P9uiqJKvamRbxe2UcSjsFWyGCE6ddH-so9S9Pxn3SFTjEqBRMu3WDXjwLwXe7Hkd=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM2s-wafYLPTFLg7Kb6t1ZQy0qes-q5Yu7ooCJIjO0OfumAxPkykM1GaW2D8IHXdqXkqTtWYtox4za2JXJNagL6mxcfQLULyLK_GFRtXKXZmzthFP3G=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMMshfG1lc7-Y_QH3-N3VVRxvzXmRPNwBVSXVKaTGucCdXb6pZ3j6pleYfs4q8LMz1murunMLO5pzx5ocTU59UltBdpyEcygJqw1W4yOVUWrBOXHjzv=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOCO64zZ-Kf82GNGbkaqvOdUE7WI8e_wOIRlWOldCWDxxqfBXtQtBT0_yabrJu-oQJ8zpNet5bBpeCKfi2a2LWx6tyAqx7gaPzepx4rxc_vv0Ttirc-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMPXS9uTd9Mckm_8ndiBZ3FsWKKQDBZVyBDXz8HOGCBSiWMXQ2q8V7TSTqWv42uEDzrsZe8EKDcv-WUt1ocLylgSb4uKD0g9nDygmGU0DXMSqFLwGob=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOcwSo46hmTTI1vnxT3Jw9tY9cwA6EuzkKJhj3RKlp-ozGCjD3rT0vYEKdORJ1T1ZCyzKUfJLvPQ7OV8Nj01DEUzIAj5ueIKX9Y3PqZK99YFojw8eVA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPJFO_-zuE_tX25sIoFb3bsUfiaP9aYxeTDeexsE2Lu784IAO8G1-m36bKeyEvPOGW-UYfQ4BBB4tSuqlVCXV3DLovZL3su_4p9KlR3OTVZLpQwaQ_E=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNiXgAusNxroHYyeAnGhv7XmmvjQBfVP4i8eC6ghWr5bNDYgfs6VS9rRY681w-npAz9DdLTluPL_d4WB-rX8NA2comaSuwQN-rcNNkeZOwsLtqwLzxB=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO_9FxCW0QEq25bVcChSRMkBXjI1V3rXZppp0Tm_C6LYuAXysoRplaf0e_a-5x3ruetOaCVJ5HKSeGrReC7MmrqfCR4q_lFhuCxinhrJ053wth85-TD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNWaYQYZSe9GgtjlgcA3n0PFX_yWoBXQyfvtl62PSTWWb8veS-cpSvm8X6xDBHwbqPwNy2Vz30Z3gwUtMdXhL4Trqa_UCcttjk_H2ueKJRjGhV-rQFk=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNEwShA1ErPmNlGxNZ-21cOp2Z9ZqxdRSkptd_7N9YY7YpO0JDR2JCcGgFvu_rxnMVU3dzWFYp9Jz85BwGqk7Gp2ovrH63B9Fa7HSJdZ7Qn96I8anUs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNKkn2639E0jxYkBIxxNvugii9Uwb8bBJVjdS_jjS3LuMrS_Ikl_GlDObRH24VVtKyOPMzFT65FNGq1KoQDZBehwCgROpciZ-Gj7W5cLVbYqPjUVWk=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN_TcTxPMhkHcuEHmWqrqiIjNyHvWZD_3ngXj2MYt2GRDf-4O1wcQVaYG-GWhi0ooXO4EP2GNHJUAPF1lac-YHk_FmaQuGzHNb1r8QFuDbek5J7dPcy=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP5nbsZH7Qv4AQ5pqBypMJrfDI4gz24s6095yfFBc8oTLtJXLR2Eia7JiqTPsGbJLrcIfCewFTQ_8Js-_MPR41vBjDqCq77EUwTCnXiNzrcdXvyAacs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMKkh-7GOTssAXw-MfNXBG-4q_ey9H-TEh4oePSWpbg-EmQCLdhdVcKF84aubHgVg_Z1ghT2NqVEJmdGx78RPcl7gY4OZ34Bim2NYdKSKLzaFxs3kfP=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO6JYGX8EQI-Z3Rrh_ku-fnGw0a-uSafRLCWiifG6ccY-KO63N9___YSR3wDIQ16uqLRKNPZOID0uQGsnDAvJmal-BSoNYnZ_RgVIjV6jW9XVnxXxIK=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPBJJ1N7CrUHNzv7xgt_qeDdM8m58sdHPE0rH3cKRVA7jewfW2fEIKML1A_J4UsO3XoImVNJJZ8PR-WjPmPQ7GcDdnUo_9L4jrqLTd0PKQONit-Ejre=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOUkLiH4A3BFs3RtlzkyAtECeBqlMVGChWg9R0JF7xvPGHptHdSCUNAlSGFyFnw-cuzybyA9NNWB8NkTuaLPnkSs643yyxTfRzIB2_ZovIY4BQuzDvJ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOLxy2MO7gvPaMsqS07u65jojvGJwMxJ4GBF0YhGs7PBL6Uua3OHy_6TrbdrB64PwrrF4XGEcLTOa8SC9Q0o5uKea0806Js533l_58n9WhDLy_U-tfr=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO7Uew5OTu-P1j7sCWwaAGBDo6Iylatl_PhLMSJlaqCgZljbmlgKJcp7QddPdCXaHAV2fPOgFaTfxBNcl__Oe-9SRnkERhSD-_1E74jz-N-HEWmHzii=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP4vVY31TJKXo_KJDLlSENmEN79Dl1NVab-4In-yn_kfC_uAhhOGcYoFlNyspVQuENIFDy4jxBxj3J46h-OtKcpC83FAVXjO2SfO93AS6siHej8zHpP=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNYKM7qVB2bsCwhuxYZRtplCY1aq9L8mPQcJEf0cwR2fwXfD-V-xUI1f2GYMjy5I3ydhsvkyazUBizXCCtYiF7XGJysiY84U2QryMGElbKEm8v_eMtC=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP35T8Vw27NTzT_xdbuGgPFiK76FUQk-yo5mCKz9bXPf8_om6TTJIDL9MLLthdnCyMk4YUfQBWs0Puw3-3XJzm83Q3D2TVyvTnDkFwQpwxkSAX7lUyQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOQDfRrcFVoPsbl5Kg6Up0oEHdPNm2swPY-cg679wu5Mwsjyqa1N0nOD0NJcut8CDlGgjyapnqgxv5XaZE28r0SSc6ln7m1GDrg57YReCVHXvPSHhk2=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOeKZzEbhStQanUsnJ6ZUob3K-oLhNPqLTHGjXU0Y0_v7aaA9n2-S2et5BPb-b8O8DLbblgn2OSCnEzPbsHtEU3KRBLdUtsVEsTjmLCOwFmtjXPOYBn=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO3PUIbNBa5M1NxjCukcBC9hfHkWw7cM_dsfNHR_PwjB9Afbwb7MHL8WRYstL4SR-_WnYCEAxNQOl88CQ86dv331RS5ldBK8rB0oqCq2m_H30EWhcCc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM_oVRwTUZYVpo53Tx7e-_QiPQUQEqW4wLMWVnOFhDoQnZhj5yhkjfmK7nFvsxgsaCThzIvUXnE_2Msq1mGT2p9OTi43uHKV1NrdeTDmKuG9srhg4Et=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMWFlUHF1XnJ286NLQhMQwtWEBuzsqXmYoyR_qx0Th08_QlgQdSKqjJ0BHV4MVW5K0aapPXOIdi_HYWpFw8c8QNc5L0qck4wdNViPU-ac55CpJcZ1bQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOm3xyzIoQTnJuA2_qxXYO7cwUaxxtaJrdZrsN9zMqxz4s23hQRrl6pC_VEU58-5rAaYdvdY7lEiUE-cceiUa_3KrJBgykQBJEDBZ7RpMtZxgFgyaE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOFdJGEeeer0EX-Ty6exNiqL_DE-P_ASwa9tODhKgjvsJq8Or6qZgTOHMU0eyCuGRGlt9CFNNcsOCT3peLpK-2v8V3-E7eUH69aj0zCCgVyLehNnQg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPfLZby07QPR_yp23J5fBY2kIq-xwXwYZQcI0yL3ghrW2Xn6HoiCbDvbgO94wlBU8EkDkDrhden8FoxAT27Ocy3gAOev-T2_4w4k6odYDtiPaPp3m4x=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMU1PeoUJvMgHmMhRw4sIsUw3q4NEWO48OH2_7LAXkv3_vNjKQaIjBxLRVn_gNUKqgj-kawjyk0e5cYTdyqiwzkKpk6Iwy-L76AOeZ6rRXvfG76mhg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNWSnOjIEOzi0BtC855PHWf9VuoFGzNe30fR9f0XmyqjFkfa14TwAuAzTKMVg7oi3Y_ybQV4K0thiAdSt7jvGo6kgUIup4iDPPXhd6kVzkjXcSe964=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOLhg9hllYb3WQlCoTohViRYBAyqCW-fWprPWUQIJr0v8eJsv7t4NFX-uO38BOqw4e1Edczuf9nTXoiq3zlP_Dtiloy3X66bXdw0q-9oAKc3-V1mcw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOv-cdP7NG5ENZofjmbdSW4VqX5y65r02tkf-INrwI47j3rUWYfpNCLBLNPuMqgIz8aABDvYNm_z6Voxs0plBfrVC1xnyg0Jph4-rWaxBBrJV-rXwsu=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczORjLgRHoGYwbpX0zdxIMtNmyZYE7rl4mlBQseuRJ3ES_u7TZ4Ac9VtC8uR71Qpe6s1ipBQS0X-KrG0MuGgYC9_H1VEzPfIlkkT11Loz72jP-uhg11f=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOfAyoaeLeF_YVoDb69H2v9uO2QKepDIG49GjtvE6Uoirej-rg5SfuhgJT0hisEHpwZkKG4h-5uVr34WAOPSsscnLM_RntEokas3uJLANLQebEeFgMQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczONHg_aN78LxFXGVMLu_s5VI4whbAtnddlBeOZF07hPyN3mrHVA3fR55VRodb1thGtqaABh_vuTCItau_7EwOcvSXUfpwf3XtkPU4zYOLyvdIZsK-Yy=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczONnjRVTRQwuGTaiHkVZSD6Qj9pgMsVZrO5cQDMFTM8IZP_PtpxNs4DUFH7PDXxg8td7Enk1Ur96V9vw7LsakN4jLE7rC7JSO9pwyOhg_4jTn5LDcQG=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczONt2GqF3SoG7e7MV90RttThjeRv75YxiRxOPeiaWTAcNAYjjXSRGbV6-gbPfuhIROtSdNE8iGgOr6_LVpQrcm73Q1WrOtiwdwNrlO-ZDWk2WZ-7_WA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM7JcnSydHGNcT-ipohlo1Qug1IIdAw6P9FQgrcr62nAaNb1eeWLpY8fDfkSarsSvd7FzeRzYBSPFMHv0npWVsAwJguQTZw_cDXq6fvSdf4aCbFTfNX=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO1Ae7w4gslBaTZtadoIOyaydEYe-XBSgyiCgZmEWyhwotGJy4twumXZSae77_NBHne0UK9on-rnW3UeVMEZgptjnTubYskjDULvOUqX72H2muc0__G=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPRqjI5-RyUlavsQKZdwL-d4K7pBl_15G8hNpSvUnzeIPTssQ4HxAGA_upADFMA83Dgxrd15Ty-cQFUCYE3yMvmjqoRGxUX8ibmXsIwZANo1-UeBL4=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMTnDDup5J5_W7D5XBMHHWlJRdhtUdRTq-Nawe1cfauaipjUp_scCSS3HIkI7SKPeihErfyoidjd-W-LrLhGt4Atu9eSIQ_NKJH7xWPRrjmG6diUjc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM3YJmB5hYRl0U5SeZ_ehgFrqxF0dl5jwN0ShRm3vhrS5DVQODAu35h4-38k7sVJhaHyDmZybqIxyWPd3S5hV76GjV0Ribg8e5U28D5m7laM-W8MYs=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOHbAIDPp8ZSBTw6wwLFMiJm2T-Ki_pxutz1S-NAcVVSblEUHi-pm0380btnN6U9V6rfrkBx4El-pcfGT5AlfkM3DfnwPRX43IEdS5Y6pBWrBYG5tw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO46FtVrEl3d0qfLHke6zVzqctUSeFKGLZgjiIla5_k_mH3qilPBatS5kErtXJ4UY2pXmoEDIxISrsPz5WkfXh-8lhhZGfKc67BTBr2swX_uJ8QJ54=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMIO0Xg3_m04EAQRrwDWk2S0Grjbx463TADsS0FpawPE-O9-_i517fBlOiT_0ji5FfamfgLNma01H74yFPPsmFblZ8TyOjeoXuO5E301vmK7u3ui1Au=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNsuV079Z4a3qYohti_b7_wY0xq1zGkYCDHTPgJQtvlPuZm7LVX5qN3JEhopCrBhKL575_BvZnSf8GvJ4r9BK4Hjd9mlBKKoRDS21PnRyivwiBSztPS=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNXr2wDtCwx5hgO7c7v9-DYYIIMhlKQIE7JdhVs5Imn2Rv3oeJcjH1VFAK0DQE7wA3e9DO1GcjKL-7xct08YmWIditWFIlVVu1G0mEWzELeyFgCzi99=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPj9BvPxR3kV8oOUiM_ducI6LRSamcsp5Q697Zzl0K-YG_5UFtFs13V5IEy1zwN2Ngoo_0lauNT6-QEnzQkLHWBahLrxb_JFPqOycnGrShKnyJEGPuD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNG7mwMmkoFH7EeDHYJ6byN3j2wrXa1wWI501BE62djWlb4HerlEhpBhxGGnrzV60uxoDGKgYnKSKibJfHQEhUoSC1sicI9l-0NRtthXYbMoKb-DU4l=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMp63qoqF2ZUWZzgwcZlJRJjHFhlHKTIbuaASnxYOm9vnVeTk8N4xeWsdHQ5ESYc1eAXIYKI_Q-Bb_6fGRts1j_nNhnLwpT7r1ZoJ9vg_JUHebuTVJS=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOAkWJv5IUd4rvLghihN6veexPUaPngY24Xxe8yqIJ86ZE6vTVGrAG8UxL7uDl0cqwFjQcbWsEFq2y4GTPZjtSX_RqbncNrXO6OaTS9_3Wl-Rcdfnfc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNjZ7Z3jn8JyA4TlMDxM0dFh48KypRkT1ThWIMgyinQ8NIQnUJUp4ZWy_P4ssvm3fgegTovmjaKiFk5Pm9vGm2EgMH31fUVVH2rIFEFdehEpzPv5Z0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPin0w5CxkNwdCRtEbUm7OYt0Sm5iEidjWg-Z-N2jASVxh6-kwQGAQ0BnZaL_pdC9eVqVopYa2nPHkHc_6VGT9T3_uk2Kv4oMe1s98IECqbEUNAk8M=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN6JOL_LZebT_g471gYW1ucOk5A38IJjxB0S07VrE2nleNub8TC7gYDJPTtKQiOGt9w0KCx3yLBWlUykIeyCmXO7CpCcRNkU0Z2HmtTbzShb8i9Y9g=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOAvVheg9OY48DIAMkRqiHVAmHB1spMIl4jt6zhF--P_qvQvl_odJaG8t4xl88GR2APGlD8QuFJo_r3nUD81le2qNjL_gam8woyLQF16JsBB4rsjVo2=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPA_Ip8p4NzndeAXrOS2ByX2AWO0n91NpI6CYhAYFpv_oygkjjvsGke80jXaR9w5Xxjbn1t3ie7w8L9P5jnccNWsKkGTx3KtjM78drzSH4QZTNAK5j-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMYOjlxga5xt3BJPWK4ZJwxWYjrhhbDpMROskse58HrI6aoQJg-bQQy2eFzNT3-tcUVFMCnO3ws7Sab52AlVXzKqJginPLLlbPMhaVZIX6ABI6uJ19L=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOEeywsWPShWt8J1NioNR-3GY-cMkgxnSfy1vlYHdZr6YtW3aD0YitC4Ij1DxsZClFsyj0kYTO8syoz38ZTuqZWF_SlsX3Po6G7lFLS3FA8a04S2Ji2=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNihitGMo_Gbd18_IB9T71ync5ljSPAD7NIJpTmboPLLFw9ocsLoOfxU-eTg66tOhD2STkQYKsBGCpLHgC9bLvBE08a5o3VYI1mGQRMBNkBzN3eXpwA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMD--TyfX25grNDtLO9xYEji_9S9cpySAG-81m7FmimK625DOHq9lsuHjDJ4vq-9Rbo5TOpeji1XRX2FWd_mlMAn_yDJmvdjqQlJKdMgzpJbKeDBM2I=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOZijBO_Fa35szVE44YI7UpZWt9jPd7UDhro3vkVxp11CQaUvlr2jfCt9krJMy_kpsqlUt8XYiCPizBMV4jfy8R6gsVDoJOSETgOoffwSzFQqWjhHtL=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO4iX9yyQAbF58_EHDdmdxLNgAqvZ0vdf2nmYbcBWO6-mBzSaizhpA2j7sIO7lyqDjPm3HRoIrRD2g8DjXLBpOA7Eb-BYcvKNVqHOm7iL5ilfTVk8JT=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPEq-sBs6vS-D2GXsaCw7gkQ3_VKVIxXVBe3pyt9dWIkBuhcYcSwLVXj-r8XH6-ANOUtYo7GwenmqDX9XtqzVGD1Q4vxOA_OhvIfEmuUKf8J43oCCm-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPB1PhtyQolJxm8_66rXJMZLw-Uw4COeqQrdh61LGTOp_rDCTaAa-dkiH2qncliJJHWYBmuOCo6Km4oOSsx0SCU6QcVZay2bWiwXuQhIf7Nj8urb8fo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMneUI1REA6k9SLXI4kQIYAzs964c3PpmF0OfqJD27jfak9Jwmxr5QOofOu--cPefysZU40HQbj-6j9TCeAtGY5qxcm0CE3EOprDVCU459uranEQ_GF=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOc7wdkF7Y1jHEXiQIw-MSdg7S_Y2l830biZIsTfQGG7-8xwdZ0h8jtJoNEZtZMcsQbgFOSj9z2ax347Hdv57bPxwETsY6Q9ZSrtQ0fJYH8DdBQuks3=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPquT8StjzuIrEuaBCcSwImgS3v6vhNgA7uCXDGSqO0xbrMoa3vwG7scaqm2fYPqZ3sVHNBL2BTt6OZlr0eIxA0MVgM78VAzWVs-mcLIWRZW-AzlizD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNqloEWnjmULum0rFMv7eauOq4BD3FSLxDI-n90k6msES2t23Jlkx8ooIXLbNZo09pd7LkGhGTXtYYS6xgNtoLIOYQlCaiaBjdwLopZzGC7rVClV8U=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMSfFGpYONTsPuY56LIRACDK1_wFEI3hOhWaVAyAeDp-fa-oWJJZgDWStEptPyqWJB8VnPPboW5V1Lw_vBvufYH646XPwogVOAlPmetrhcdVoyVMzKl=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNEHlyUr0VIKclSJ5j8Moz-wjMYbO7e-inxHP3lED0uUYKGD4u5OzO5XVYHvtj54Wpgv7FE4vWdrmUGiGcTJZVpFr-9acDXZlY-a9LkXK_gH2F1YKI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM_KN4mr4wkODkCPE2ti8XQOupoM3akkv8VTwpa7hwRW_zAeHBr5fP6dc1v8TDsI075ckouRA7RZ4iPb5wzLvvrFPx8MUOg-7JRgzGeoMQwS-LsvoDg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOOm1-T6sCu9MDP8sfa-hBGIjW8RDfSWyADpEhSfqR7AtmLwjIGcj016j_jcNPxTK1nspvYmpjNwU0Bp-iTukqunCPfVfuddEXE_Bcg2-IO_ZIF5Q=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNh2tDJGQdE0ZlW1jEz67HsUWqKxQUY3BsmkmM2rZ6l6w4ZCqXtsyNzbPrO77zT0h_JOMbrQw4DsjH6CDhFPYhNq5ZoKSxmZdl663xWodY-2EuswWg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNrrCWuT1TXVURPfdZMsdW5nhiQ4e2lqmt5ouyUDmbKqKBWCNDMj2nnr4CMZT29a4RDMOYdDDJusn7ooQzXJZrzcKtSC8-26NnQNWwfH4K3-H0q0s0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO8D6z6Csd7nlyvUvHgyaFWY4aumWX8p8K_-1IClq51rFYTZvjEDgn_2OfMHYf7OnADWRYriR20KaTxJXYkYxSeZgOSRHLjYjGdVQ4trQBGcW5pXbY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM27S8mEJvFZheSxbXh4ZJmrUmcXSSo2vjR0ne53-TgFtUQaeLdtIy1jqWG0R77Eql00R64PL3Hw423bU8balEDM5EfKLnMRMfecTsrsz_xMIibBpE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOWEKM5uqkyad3wWIkaPskFVEK6oe-H5qrvk1Lr3ZcSAwOjuFq_lqepcQbdcDx-LA6YSF8Tr8IZBGvkT4tJO8sJZRfttWDF0FDjlX_wc5rXpBrTf68=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMqjkxnyEL0S7QhiqL_L9lkhK-sGNqrOrI8GAq7p6h2y0nHjVxRj7pLViUeegaojt0w1imdKQEwF48-X3JejW7LqwMDSVO02LZprkhfJRYoNeS-P5U=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOQWLtOxZmX58bAFux9z3fJbRgfj0XsJ1iWrnQBLrgZC6Cjn32VefYqtm5i9it67zRsOpX3_NzQdBS-KIZJz0Kx-BumHQEMTATHwO8P89aX127mFTH-=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPh9_X6mrwwook2wtNhJdOBv3rj4rjNzc_SotmeoCVX80rtx3NVAUIp3zPdS-HmSKkoqEnRRt3hNmS8-yug_IWHmghsS1K-TIeDRJdwnvhIAVpCZXTR=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNPxr3nA3QEBuoHXFpxA8XvuQ7kU8LrjctbqrPBYKNNc5gew6jLp_vL5yB1FPuWU43Z2d2nj-Jy2kFC2_6HZeMOiIgT6pA-MVYR-JV7Se1HDMQcVDUJ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPi2cDdacf-cI00VhLOHmfCsOBAA9cK61hubx20Ddg8S9dnPJFhRtVgCjxTSph0GM6bBVf8g5Lsq4nWbXaB5FwwJpCYiVUl1pIpDTkZkWqouwRLcaCp=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPM8SJgFeU_NNgdyIZvuab5wK1TqobIenuzbMNI2g9x_5hE2paj-cQNHxPVIx1jQMDtO3C3fP-1ij4JvOwJVC1Wa44XY-ZlUsTiwUib1Q-iSzcWQm-9=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOOSsEwx9m1r2MyR0HCaPFaTZnrKZxWmhwZffkBBCm2vPugqH7uLXviJcKm36gP9prvX1CYySr-FfsXC3we_dR9DWYJu432iEIpFcLMxnLhwj5QpeLW=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMo0sr8kKVbavmZRVTMOFZtZ2EI19RwXsxpmOi4FipdoQE-MfOTxrWpGDhm6wp_78EySzatKIO9E7KGdkPSH7dVI7t2f0ml4Bhz6eeSSAJHVcWX_hE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOQo93zbq10MgAQ-KnSlkY5S-SCTkSgQlm__AwaCZ2mLJVhKregriPmfemf71oxAhU5oeziLbG4Tn44M_YtIYk27FhvMNWf4WHCJT-McvnD7KaSm1AJ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOnmJU9B_OTz_jrkWGRV1S2CUKad6-Nvmc6SpnUDE_PQYsPl1riLnrl-EI3ikkav_dx7KUVISRiGU_vKPQh332H-zl4wLBsci7GhNOD2MGvbyeQXW57=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP9hgh2PReYOzmVB5DYwKu5wYvvAoNd_5F3oDQOGk6tSD29oyhmWCHJDp7OiyRCiE6Fg15BJlWWjJ3nvad5OU2iWs3H6OIXJ9pd-aOq9ukE2rbdnxBT=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPo1xyOGUsSX0g19DtSkGNCYlRVdKYNrPMKl6XVpogTNKxukUQ_-_9EgvnzxmJyLWZqKSehjsWPKuy6oAivvjYTdDfuUOVyZwzk0e0JSKU1yCt3LoPV=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOy5EiBhv83r2uBCVwhDwPbho_4CvlAtSxfOAhRan87sd48BWhI_SGDo0yr0m5Ae8RykJWDd6-UQCWZuaAst9qA0ruJytFo7ZI9JkO2PC8jOyMA-_Wy=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNgCB8rcvhVECGPShT54NqDXmNv-wzwC1EQkLD4KtHe4StcafSjEcFRzKLys09DgZOd1zN4HTPpIcZpq33ky1D6TIoaAyL0ISDYOWuNmDOqXXainWbD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM4Wiw6CqEQNSmPvdh4Lne4oHj-___o_Es_Di5V2VOeWlHZXSfbVP_MIwnsCw_H0D_bLBwmC5FJJIo3USMRYoJvcM32Cm0RNdXv3KbMj1nEoKokimo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNzE7qGCznN5YSw0iDLjn3alKxeF26i5LCXC8_hr1NRh9HOFl4Q2OWYLkD69tZmBgLGVGA9xXwn0tWsJN7MqHlKDIskl0EbNWFicasDKXmqdTZp4H8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP2HJlh62vx36t1Q2o-JjGGy_opWKSIvTdg0kAu6egLdS7gvDm8gpCkeETRRzlpll1sFo_eI2nqRmJBHEDC3hSSZP7sWXhVleyznSna0SPW-CPhuy7w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNroWqxzjUCpSMGViZqpNqCeOPXAoa5nFh6M4W-xVlF6bv5JM9kVyribQSkZX143hikQ5GwtZejqvlOwQqeObPqX4eUCv5yP_408hvjv4W0ACOBOyCr=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOSXb_iSfeB_cG9QKV0-q3yU97_s_bOryCEUv6TfMN04wF5oVnYWYwSgmGhi9wGRthflEIYSBug1Z6-Aj7PaP3hPIgrl843srgiUQum1Ig-RsQ_56rK=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNGPeNYLT0spepzAnXvr6bIqAQBVzihsaQBbBxiejXiIvYc7MmNoVLp3S185SoSdQLmxaEteb85NaK_DfELe4b7nndK_nBxW99lyGboFSEAtcV7s806=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMj7W4YTGrdyd2sEMDkrux02V58S1JNXJY-6LqCAfGgmzqQRf2s6PecbdQzKe-A_pORQrNBJNTq9ifCqVua2jzoSXBW2A71tx1VO37qtZwGEsC4yxhT=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM6dnoHsDdOH_-huvRgO4wHYBShk2gBCx5xLif8f-FfvpQrHOyyv0MuRo0b8ES4YZZMVH7QCzsWyOrRHgdHGWwH3KTj-8NnFmVq2ddio3-N6-lmHNK7=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPZF7mWNPm6UQ4-bBOJVU0OuEfAoB-t6FutF60qTCG5BX28DoopNbZI2wxTeIorJsmpZwTfAOjVoHwE8BkRDA2q9mCGqpELpTRNfFeam_n72jR575u9=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMB172XmjcXAt0Tf-Jcb9MtqqvsgIuznwgZt2_8N_sWHQCUSmEuOf8MEVFci8R1hRbBmJliTvu3fYFErq-hTIGAsD--OwjDwmV79gsSpFedjC194znI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNL6sD8vl6ONvNm1DzggJwQmJh3h4DH_91s9XAlHuITFen5GA9qw1I8qzoDHiKFSGwktaFvrTRVkGbtqC_ET6SKsSyjXBA6dzTgZOBAD_-5jQ344ceR=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPtvbJosa2D2nnJ2kim7Ohu-W-SFxdc3HiU486B4FUhN1ngT5UOiaXPeUTNUJua-oSbiCuGNB6ClKQ9yJDQhp0AmaebiE2hdREC5TjG_2B2XVNsSMps=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMwwCwau2zKi-dmpMp1FE2ERrOptIKVIyrcQhnupdea_gs2EbUathkbHmdc3nREwQvfyJPFO6WwPmiCTWHOtoOLW1cEz-D9CDIsTvdQS-VQg5qLlBxQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOnqk4NvCx2nw56R2n7_iqkaoWXn5AUgw8MJzOTeRPTPxZouEoKrvBhkpb3rV2obj45t4Nv6ZbtlVzR50st_q8Yo6dSGQfbSnOqKB6SFas9z6nwTtB7=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNJAK9VOmwB3m0JYkmzjdzE2jE8Agl8-bP4wdLOf-5NAs65OgskikMZoNTgpVnjjzujn1i87KDt2mepGH0OAAQ_TXWYWEEnOF8NCPrOGYF8GWQ9jnzf=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPaQrpdZTyOIxTvMTNytxHtVfQjVxxlpEA0268eyz4LKO-Xurzc-bQQ3qF7BEtNgLFE2Y8giWgGHd1-Wo7dmteItXMecIVJ_TXWBF6OfLv1hqQiDbj3=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMN_5MarN98KVm7JUbxitZI10eGMj5JKDoahngh2XZYtCOO4lc4ZbD1OzRGDt3YpzMAFniVyFYe1MoMZdZKMMeNDzpUa9_jqQBn33HPku-z5JxWEJlj=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNgwe6NFN_dPSd6YVt_GrKKHpMimrSWR1Ej6I0scpXnwW3HNjd8x5OkSeIlTp2qxJrH0ZDDAssuE3MDDr0cGjiIdqdztabdnWQ_lxgE7LXKpNQlh6v1=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNx01VURRJ86MB_UJN9KixyrwlbKHgcg3gYYxa5LYXUTBkBNHYdzb6By2rkBwhJE-8tCPwNCQOFJN3nwV0ledtHc93X1rVoYCSPjwwvFW0s4Tis7Hs8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNu0lXB2oSRkri_GX1Upap96UBvePsyVwka58Aik5RMN3blQKmBdOFpAUSfP1kUYyow_DH_vqqa4shVhj05kFwnPvjHB-bGtIisY6B7qKz8fre6yWZo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP0J2blUCKfwh6Ae65zwswqyig-aflVN9qID1Etr9A7hzA7D-k1HS1EIFIprTZGfUXFPt9owYX7vz3N3_W2Eqnv3qQtbPeCw0Y8D267sso9_RLFkLEY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN4QKaVIdnfGFzz5_RngCVV7SlBA5KYWhDD5X8fpUkbo3GTT3eMfufr3vhaXUPKxB4_3TKmdxtLymw4UTCvue9mKYjckxFPdyne5rD1EXJ6lYsMJaw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPXZhGws7X4ekDJkQ2TyOzFRVMYoN95CaNhGzp21AmArYEDLgq_4bjW6PzCoFSHY15N2-l67z9R4u_q5tQnr9AabjO_duD7qltiytnvi3yMOEKskJ8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMrg_ZTSsw-Y-b_bAODr-AkLyvtSoyNTfujE_bmfsVyEAxwrOlNvGu-SDvBrg0JS6MCz0teXUsd6oo1rG559wd6dqBiX6168ZHyUVbax1MMl1x9SzY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPxvNyD__XRdgAHV1wGDUsd-7Y7IzZXOFmOHca_R_ZTKaGmVYH-l2FVAjcKV3GtU0NObndt7NofACYPskQczeyXNqcvrEGvQJpAtnAXOoZqDHHjJxM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOacIMhvkSOSoi6cbiti8bpL9fYeZiqZSTyFMXnhGjO6zhTod4HVqhWoU-mFVg-htP-9O5ZKMIPrMYiofPKgL9SE8fS1Fh-p9dD5EDcUob1GPGjmSNa=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPCeJ8_CyU9lInb0UVy_bdYmMTz5P_WvVfw1bbdo0ycddxQhP85rfog5ePZx-wGiBn02lYOQLIsvmJw2_lYgvB5vviWnV0eMVkUq81OSj5trchU2qw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNy6v34mi-kgxitdRPvB-6GxfT7kmckGx6nV_2zubZ6KSxXOziSJ_bl3R0Ks8jrkAJV6Efu-vwVDhNfz5fofmuh3_y0WWHzfGlda0A--qeR3w7eT8g=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOJKHD7v1MRixVLwmvmvtXY484acP5rVTwk-jlykj-RmmgXwbCk6wfmMLADzi5SCqN49Hmb_paoDAQ6qIU49Ij_3c95oyxeFGSJ8Z_mRKogTOet4dE=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMPqpEOoqbLaxPF-CDkOPUZDrbzC9V-A6JJO8Ys76mU-CXC3eL5o7xSJTgQufFnmDi-0Dwe8cTSBBT1kvNFQopd4WlvvU31u35WQ4q0sE2E_LSItaRD=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPonDW7yAt3kHrMRturUM6e2X7QmL0VBgz5ESjkbj2awYHVuhHupe7UU-C0kro2ID57xA6IdYcrDPLnW8FMELJbDiO0zcrQeQQw-ejt_Cc4csJm0es=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczP9SB1LBVCox-ai7q_sHd_eIUeXq3rSSWo97Mz7NNtWcSd9u6z6WIWIRtzExoCBeJr5V8NG9x9shMfhCEXem4r6K06HUCVb2LTQfCWL5uhCKaLuQ9X7=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMTfiNbT9eK9LrSXjOBSpl0z8nJ3TGjANWSFKMuNcgSwgBnS0fGhW1IprIOiGVQV9XvmazeRMgRw6-CMftfauoqnYTU8pImRKFtEH0dhQBzW6CxY9g=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNey_5rnGEFMzdOfRyqvn3JU9T30u56p_xp-Eg4f58s0uEI0UvI-ir7o0Ri-5-kugKKM3gTK7cTH0zU9elMpUctebP9yJWbMLT1jRCV1Z95HV47MGw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNYBC34c0TBqUqexfDD6_36YqMU36zmFqKBt-w7bwKOE-Tl-tgLILEn-eaokTGCkLjL0uBadRfflY74B9FprxpahAxig9IPnXgw7WTpGpc4hYhusA5c=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNkYlAc6mWp77nTw_xJUbuVto9CtjfkMxhR6_uTjT67HhH8btncZIz9ELxQktNJG8leX3OoxblmJ1sHRngdrLPYURqFORclrR0BvdJ9hYPTcAqubck=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczM4JcipjKi20Wk45Cubs_Ei2FoMFnq7rUT9SIZ6mRYWIz76b8vAApVKPr9QLwuO5gbyJQrpfFNcSeCCRG-GA4lLUXuLnqcH2caEULOZJVCp2fekH50=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMQUBD-5pj-Xk1gSdgrH2YMhJtexwh0swtuq-OhXywTERvpXU3EWTrDe01ToWIUfLdeU_1rLtY0PtZKaZs31Enp8EcA9oMwUBr2l6I2Eooi2wstFBY=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPRh_2Y4JQCfY1LtTNveB2ZpI-BjD0vx-s3ioTGOQltzqoRltkmtdCTiHeclBqONwP6E6T9cIsIc3FjczY2_XlA03z_udTwcLSXGoEDMyRWVvrdrig=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMGwLwNDj6_Z5cfaTfsFAxcYNz4HjniOJdj66vdnn6thhGgWFHI4wd6uV9CsqzJvX6CtxHkBqtz7WsGQsrFEfM0QZs4LMc-T44gKGpNyTknC0C_hFc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN8eNFtQjSkME3ejWZW5WchIb7zmk1Avl98Jsk6uQ7UAzK_m-jhdOQMrWRtaHJ_IDXzEIzSlVX-IVO2_iRV2jPOO99YKo4BhhKCm_-VdMeFjOCH601C=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMLGY-G9t8k-JelotTRiOHHPIUrlxSJwWekhzHtMgYpo71GRquG49iJDQk8yxkSxv_92iW8Ve0gmnAsTF--L8fJnwqkZcoNcAcfSLN3EyhQK8vgozc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPCv2e06aPEOEPMutFeKnHfeBRwYNd0DSYQVnq8eVeqbqbkqUpISD_MkGn8IYTNTwp5KrA7pCELNGrx_vihK8IyzvNFoQJ6DfpnsL2jw2yyBq9JjTI=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOmxMbLVmeUIpOmPwqvJt1X6GVq4x_kfYX0u50bq-7Bg3ufNPdePymT1akmd0J--Ldf_ZU8uOQKMx_EMv3bQTLmXYC2Sx76Fk93IOGC3VXT7VQDHFo=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMmpk4Xm0M-nnE9cUlwkPi61gm8v1QBv6L9talvLvnpW48EUj8nPPL-UQJhCzbO2nMskQ9-uqqrctrAOqDML5O60ntrwe6N0rR_rXGTxXZvdTvFc6Q=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPiOhE9IbJ2jUBSsZrk7kn6cLRE3AbGpAW8XPKPnXXLzwjJDGz7xcDjQBsD1xLcZPGioOtyKMVZQZ8m0N0wONRRoN7IYph-mMljfb3SdBONZFXki5OR=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOQvzNCAMgdZtkLXue1dLHW8LutEwTgdfbCMq0-iPSELGZHHL10ySi43YodpIWseY-kwGO77wS7vIpKeKSb1f5OeqogLFqfRiXVkQ-dKdR9esQf5Rg9=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNc4VW-AlqV4x2hitfvFrg9c2vjQJIaXQbm00hkRpyQSYNMexwYUKe0zuflqjIIJ6zpCCxlPmzmoVrNDKJuYlgtogbm7f2D6twaUU6y5GpJmn4fpk8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNKaiW92fKcZ0ExLQNJWO1zo8WxYHkEpM26pGZxYwpuyO1Wvnw7zVyiwMAdhICHQ4KNVDx7id22qVfu_ShSVdkhIRlNP6VaNFT2O1B9aSr4hHouYM0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMMEPwaoGRa0E0UaMRdvhstiW8GGsOmXTEZiMUZiuB1R9dLE2EfuED2Wxjlt2ABTdYpgdBfVZPCFOzZtuD2-ezgLd3-OHVvdmqzz5lM7heziWJmkr8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPrXfMbNAnQVKWl79QiqXAZX3AH20JjdMPQEQF0esYDD3frrr_J2RPd56ej4-1ViPqZur2I6GQ08ISLGc6kFRpiBJ1Vya-yWJuusxiX0IyKG1xzyhQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMoRDDHWg-2GpZ7asVeh2SgNUstB6GsYVmkLkHakpmeB_RpR6IWaeEXslmwruEmqj29CgCog9i4iJdmsrOIgmpGOv9Nt75B33FkapFaL1I5QCOZtQ0d=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPtNH5j9MU3l2WeHzu1EXEkHSpdxc8QVtgXlMSTYq1hPlBAhW31F2zYvAnXVNOH07hNXcEj-oORtvcxx6EPfa-mcH0dPFC8W5gl-bVaxdIg-bLm4xx9=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMukLEFsZLsBU2JYvGXKyNh8bFxDQ4h-54UVWOnuMjT8lPu2qLEgvr1LuadP4q_KcR24nczks1bHZ5oIhIewY8N-gVgAuDFLcD0M0jra-4IlKeFPXc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNESh6u9MPDFNp5QRaBa7mHgIkaZ7lEEEtkcYVDG73fLTZRIm10BUXRhNwc6HKDh2ZqbVfwTXUDj5za1VYux-Y_gXOcQJe_5xS1gsprqJMwk4xMbF_x=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN0ffoR9humazKOi2aynQdKbnb0IpGucMbUyDWjc1-HFfpl6Yq-oTVCppt3kv_fP0GlgLaKgPFgD4vX0X-pYG5aDztkd7lJ6TxSsIZ2H88wX1sxBqfg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNCI5Vv6Yjp_29AyMTKdWFMgePsSwkU2u7S6uZ6glODXZ4WE-kVvtUL4FT9Oufsq8TFba4ofZb9qmNqlXCzrDTgd-iX_eOcMFDHxTITiDEXB1PJfTU=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczN3aNVoNnXSwxkMlYgm7MtmwySUcNCFdLsOkzQ3baqTKlWq8zMVO37QHZTKFeg3jVAGGfEPrvM4T53UC89K9sfzDcpocr1wyaugpZuCQC-_X7Tfd0pu=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMlKnCFgVexvyJ2LUmDmcc3o7W4vA-jk95S9CAC1xFLJnBRLTMhlr8-Kh-TwBLt63qjcUszlSMPB7rHoES_PlNjduHI5Ccd2fJ-CsIcPJWdiYaDpYL_=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNIN2xUZQtaUFrrgwOgCFq4aZHGg6nZtOqz-cEuKi2qll7wdFN_XNoJgj9wWXBvPHNUDrmZK_G5G1YFxCPpOeE9v-_5xDC2-tpR3Y5rmzEyVLW9M0Wq=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPsmoB-wlx5X-K9gx-2Zjhk-OGwuDYrg6zVmR2-aSI2_J7OGSZKykClN6R3U9Q1nEdMZiS8vYqZEZmXrfFiiNk3Dfxaf4AiDRrh7_mseFj1tvl8sMLe=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPEgJ4Q4C-sZHrBzFWyctOerjPpnnpaVNd4QDuxhATAmKNh-df0eV0YxCgkogympMepCG8PK11NR8b1o-Gdn1A7Ebg0ua-SP3x46QZUzTqcp3RsJWQ_=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMpdjka9EXnXjpiBx3O3BhRGHrq3wCT3Lfrau1ZZ0649ebZQIQ11KdadOBEtn0mPVTWaKxS4W-wwmkztLE5V8zMftgeY84YhDmh0owP-weF2dJ2Ac-N=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMK5F1TYtlWyjzwf56P3dzuwARyfUBZ61iR3cvLkH_-5op4v1CLu08y-gE0_4R1Ql_HWy8cu30_PInvBo9Jmg0rXZ_wQ_te7UfRgzmBUInEFjWGoGM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOvhqIVYTp4XU6l8IMjumItsMV4LRM_5oF8keECCTjvcf4wWkNWm-z9cjRvzYPAElD9qe3ZiITVM0xO2K4BH9cSutE5kBIYTPnR8QzGpptVA2l6Slya=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNDbixdbrfeFwPrKuZ2jUW5WurLH2kjiN-UORP730gCOTLvH-PLdQezQeVwW7OivbgLrqVzSP-OK2vxaHAIn-nmfnnueuY3O4Pnpj3SteJpS1DD4V8E=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNzpaX8FfNum-ld6FtUEL_yTT1xiC11JE3nNNFK8LbFZe1L8kHLArMkOu-lDZw2sqJJw6gvuBRschcCrdmwUQoUHqLeoSkujwSTaTKtZvbyBAuJhE3R=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOnB2_TgSUUHkgkfD0hyLmseWtqjuhH8FULuc4s32wPb5sCnVOfotvy4_uaM3Gi0QEiispHjsQlVuucGA6Q6yVC8rws2wcFSSCPq8k3OhBFu1XnwJuM=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOlQToWtdLxZwjyw30FqJtWSZKh5OXgXC9L05ZJ6vUYiOEf76IHrEMyewZjiGDmT5UvCTqJb13sRzqHpABw2sIwV5HpkBgRIEdm4iIQnLQ9LTuGtJye=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczPJKEh6uFjA7OhHI_2spio8tI9Y3MZ_i27UN-LWaL6W8K428VedJszv-jQGsVatghknLpezvxFX4e28GEQz8W3C7HXXIudXLvQG9Mdfif0VswL3IaN8=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNlwZQcmMH8eyxshc7dZOYXWCFrtfmAENffjLCj433KxJpnuJpiSDAIpftwvigqJzGTE06omLu0rgNDgrhzc8g5H58zfc9cevfbYVfSRKFro4C0y5T0=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOGfCTSy2speezyFKKg1-AvV33aQkDJ21mXoWeUSaGtkmjOBsOptYq64bhvmN2BnHdBaV_m3Wibqd021D0EnmIN4Ka_NfcYBNPliBgp2BQvEzVDbmMQ=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczNDtDVLp02a09LvrowgehrzEQC772biemn7N8iph3IshESrlsuh7rV4H-A4XRIDFfLUcIDsaC4WXfZIfJ-2gddXMCu9nuRynpSqjGmLjQqcLdBYgmk=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczOx6J5q_aFI7jDu56GckvQtKB0I3Z0yISZQKGTNyazTed3KUbgwML2X_W7a-sy_iY1ojhPWgK6FGrYo1I6sF2U_HESGMfyfUIidb3LTUFaBjuZvsv2I=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczO_xxfa4FEs_hWlSK2zWTwMcixJopyyNPtpg0AgRqNLFFFxNEyxcMEnAmLA_-l8HaQkL0HiU8awr-L228Mu7BK7ZBZ30gp2I4GRDzftmRwF3N-F2mc=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/pw/AP1GczMTcAzJ23qaDenEXODg7V2Bbho2KoToQzoyPXp8b2OTt-aDyZ1cE7nA5wLx6hcnLceZus9Zi3nYOmowu2Xoaz0XvH2Lqb1sbNiTVdoygibOLRZt9lQ=w1920-h1080"></object>
+</div>
+            <p style="text-align: center; margin-top: 1.5rem;"><a class="album-button" href="https://photos.app.goo.gl/VqqqtFxVBcLYVoPZ6" target="_blank" rel="noopener noreferrer">View full album in Google Photos</a></p>
+</section>
         </div>
     </div>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <span class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">&#8249;</span>
-        <div class="lightbox-content">
-            <img id="lightboxImg" src="" alt="Gallery image">
+    <dialog class="photo-viewer" id="photo-viewer" aria-label="Mission photo viewer">
+        <div class="viewer-toolbar">
+            <button type="button" id="viewer-back" autofocus>&larr; Back to gallery</button>
+            <p id="viewer-caption" aria-live="polite"></p>
         </div>
-        <span class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">&#8250;</span>
-    </div>
+        <img id="viewer-image" alt="">
+        <div class="viewer-controls">
+            <button type="button" id="viewer-prev">&larr; Previous</button>
+            <button type="button" id="viewer-next">Next &rarr;</button>
+        </div>
+    </dialog>
 
     <footer>
-        <p>&copy; 2025 Every Nation Campus WITS</p>
+        <p>&copy; 2026 Lesotho Mission</p>
+        <p style="margin-top: 0.5rem; opacity: 0.8;">In collaboration with ENC WITS</p>
         <p style="margin-top: 0.5rem; opacity: 0.8;">Change the Campus! Change the World!</p>
     </footer>
 
     <script>
-        // List your image filenames here
-        const galleryImages = [
-            'IMG-20251109-WA0016.jpg',
-            'IMG-20251109-WA0021.jpg',
-            'IMG-20251109-WA0022.jpg',
-            'IMG-20251109-WA0023.jpg',
-            'IMG-20251109-WA0024.jpg',
-            'IMG-20251109-WA0025.jpg',
-            'IMG-20251109-WA0026.jpg',
-            'IMG-20251109-WA0027.jpg',
-            'IMG-20251109-WA0028.jpg',
-            'IMG-20251109-WA0029.jpg',
-            'IMG-20251109-WA0030.jpg',
-            'IMG-20251109-WA0031.jpg',
-            'IMG-20251109-WA0032.jpg',
-            'IMG-20251109-WA0033.jpg',
-            'IMG-20251109-WA0034.jpg',
-            'IMG-20251109-WA0035.jpg',
-            'IMG-20251109-WA0036.jpg',
-            'IMG-20251109-WA0037.jpg',
-            'IMG-20251109-WA0038.jpg',
-            'IMG-20251109-WA0039.jpg',
-            'IMG-20251109-WA0040.jpg',
-            'IMG-20251109-WA0041.jpg',
-            'IMG-20251109-WA0042.jpg',
-            'IMG-20251109-WA0043.jpg',
-            'IMG-20251109-WA0044.jpg',
-            'IMG-20251109-WA0045.jpg',
-            'IMG-20251109-WA0046.jpg',
-            'IMG-20251109-WA0047.jpg',
-            'IMG-20251109-WA0048.jpg',
-            'IMG-20251109-WA0049.jpg',
-            'IMG-20251109-WA0050.jpg'
-        ];
+        const photoViewer = document.getElementById('photo-viewer');
+        const viewerImage = document.getElementById('viewer-image');
+        let viewerPhotos = [];
+        let viewerIndex = 0;
+        let viewerTrigger = null;
+        let previousOverflow = '';
 
-        // Get the base path for GitHub Pages
-        const basePath = window.location.pathname.includes('github.io') 
-            ? window.location.pathname.split('/')[1] 
-            : '';
-        const imagePath = basePath ? `/${basePath}/images/` : 'images/';
-
-        let currentLightboxIndex = 0;
-
-        // Load gallery images dynamically
-        function loadGallery() {
-            const galleryGrid = document.getElementById('galleryGrid');
-            galleryImages.forEach((imageName, index) => {
-                const galleryItem = document.createElement('div');
-                galleryItem.className = 'gallery-item';
-                galleryItem.onclick = () => openLightbox(index);
-                
-                const img = document.createElement('img');
-                img.src = `${imagePath}${imageName}`;
-                img.alt = 'Mission photo';
-                img.onerror = function() {
-                    console.error('Failed to load:', this.src);
-                    this.outerHTML = '<div class="placeholder-img">📸</div>';
-                };
-                
-                galleryItem.appendChild(img);
-                galleryGrid.appendChild(galleryItem);
-            });
+        function displayViewerPhoto(index) {
+            viewerIndex = (index + viewerPhotos.length) % viewerPhotos.length;
+            const photo = viewerPhotos[viewerIndex];
+            viewerImage.src = photo.dataset.photo;
+            viewerImage.alt = photo.querySelector('img').alt;
+            const album = photo.closest('.mission-album').getAttribute('aria-label');
+            document.getElementById('viewer-caption').textContent = `${album} · ${viewerIndex + 1} / ${viewerPhotos.length}`;
         }
 
-        // Lightbox functions
-        function openLightbox(index) {
-            currentLightboxIndex = index;
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightboxImg');
-            lightboxImg.src = `${imagePath}${galleryImages[index]}`;
-            lightbox.classList.add('active');
+        document.getElementById('gallery-page').addEventListener('click', event => {
+            const trigger = event.target.closest('.photo-open');
+            if (!trigger) return;
+            viewerTrigger = trigger;
+            viewerPhotos = Array.from(trigger.closest('.media-grid').querySelectorAll('.photo-open'));
+            displayViewerPhoto(viewerPhotos.indexOf(trigger));
+            document.querySelectorAll('#gallery-page video').forEach(video => video.pause());
+            previousOverflow = document.body.style.overflow;
             document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function changeLightboxImage(direction) {
-            currentLightboxIndex += direction;
-            if (currentLightboxIndex < 0) {
-                currentLightboxIndex = galleryImages.length - 1;
-            } else if (currentLightboxIndex >= galleryImages.length) {
-                currentLightboxIndex = 0;
+            photoViewer.showModal();
+        });
+        document.getElementById('viewer-back').addEventListener('click', () => photoViewer.close());
+        document.getElementById('viewer-prev').addEventListener('click', () => displayViewerPhoto(viewerIndex - 1));
+        document.getElementById('viewer-next').addEventListener('click', () => displayViewerPhoto(viewerIndex + 1));
+        photoViewer.addEventListener('keydown', event => {
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+                event.preventDefault();
+                displayViewerPhoto(viewerIndex + (event.key === 'ArrowRight' ? 1 : -1));
             }
-            const lightboxImg = document.getElementById('lightboxImg');
-            lightboxImg.src = `${imagePath}${galleryImages[currentLightboxIndex]}`;
-        }
-
-        // Close lightbox with Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-            if (e.key === 'ArrowLeft') changeLightboxImage(-1);
-            if (e.key === 'ArrowRight') changeLightboxImage(1);
+        });
+        photoViewer.addEventListener('close', () => {
+            document.body.style.overflow = previousOverflow;
+            viewerImage.removeAttribute('src');
+            viewerTrigger?.focus({preventScroll: true});
         });
 
-        // Load gallery on page load
-        loadGallery();
+        let albumScript = null;
+
+        function loadAlbum() {
+            if (albumScript) {
+                window.dispatchEvent(new Event('resize'));
+                return;
+            }
+            const status = document.getElementById('album-status');
+            status.hidden = false;
+            status.textContent = 'Loading photo album...';
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js';
+            script.async = true;
+            script.onload = () => {
+                status.hidden = true;
+                window.dispatchEvent(new Event('resize'));
+            };
+            script.onerror = () => {
+                status.textContent = 'The photo player could not load. Check your internet connection, or use the Google Photos link below.';
+                script.remove();
+                albumScript = null;
+            };
+            albumScript = script;
+            document.body.appendChild(script);
+        }
 
         function showGallery() {
             document.getElementById('home-page').classList.add('hidden');
             document.getElementById('gallery-page').classList.add('active');
+            requestAnimationFrame(loadAlbum);
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
         function showHome() {
             document.getElementById('home-page').classList.remove('hidden');
             document.getElementById('gallery-page').classList.remove('active');
+            document.querySelectorAll('#gallery-page video').forEach(video => video.pause());
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
